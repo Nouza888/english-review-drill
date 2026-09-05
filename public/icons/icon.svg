@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">瞬発英語ドリル</title>
+  <desc id="desc">濃紺の背景に、英語と日本語のカードを表したアイコン</desc>
+  <rect width="512" height="512" fill="#14213d"/>
+  <circle cx="401" cy="111" r="52" fill="#ee6c4d"/>
+  <rect x="76" y="105" width="292" height="218" rx="36" fill="#fffdf8"/>
+  <path d="M132 180h180M132 224h126" fill="none" stroke="#14213d" stroke-linecap="round" stroke-width="22"/>
+  <path d="M144 323l-34 66 89-66" fill="#fffdf8"/>
+  <rect x="214" y="280" width="222" height="132" rx="32" fill="#e8eef8" stroke="#14213d" stroke-width="12"/>
+  <path d="M263 332h124M263 368h77" fill="none" stroke="#ee6c4d" stroke-linecap="round" stroke-width="18"/>
+</svg>
