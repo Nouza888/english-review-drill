@@ -2,7 +2,7 @@
   color: #14213d;
   background: #f5f1e8;
   font-family:
-    Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   --ink: #14213d;
@@ -35,6 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   min-height: 100dvh;
+  font-size: 0.9375rem;
   background:
     radial-gradient(circle at 8% 0%, rgb(238 108 77 / 12%), transparent 28rem),
     var(--canvas);
@@ -182,9 +183,8 @@ a {
 .page-heading h1 {
   max-width: 16ch;
   margin: 0.4rem 0 0.65rem;
-  font-family: Georgia, "Yu Mincho", serif;
-  font-size: clamp(2rem, 7vw, 3.8rem);
-  font-weight: 600;
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.14;
 }
@@ -227,8 +227,7 @@ a {
 
 .summary-stats dd {
   margin: 0.15rem 0 0;
-  font-family: Georgia, serif;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -264,6 +263,7 @@ input[type="search"] {
   border-radius: 0.7rem;
   outline: none;
   background: var(--paper);
+  font-size: 16px;
 }
 
 select {
@@ -340,8 +340,7 @@ summary:focus-visible {
 .progress-label {
   flex: 0 0 auto;
   color: var(--ink-soft);
-  font-family: Georgia, serif;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-variant-numeric: tabular-nums;
 }
 
@@ -363,7 +362,7 @@ summary:focus-visible {
 
 .prompt-block h2 {
   margin: 0;
-  font-size: clamp(1.45rem, 5vw, 2.25rem);
+  font-size: clamp(1.3rem, 4.5vw, 2rem);
   line-height: 1.55;
 }
 
@@ -392,8 +391,7 @@ summary:focus-visible {
 
 .answer-text {
   margin: 0;
-  font-family: Georgia, serif;
-  font-size: clamp(1.25rem, 4vw, 1.7rem);
+  font-size: clamp(1.12rem, 3.5vw, 1.45rem);
   font-weight: 650;
   line-height: 1.5;
 }
@@ -507,8 +505,7 @@ input[type="search"] {
 
 .result-summary strong {
   color: var(--ink);
-  font-family: Georgia, serif;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
 }
 
 .card-list {
@@ -539,7 +536,6 @@ input[type="search"] {
 
 .list-number {
   color: #9297a1;
-  font-family: Georgia, serif;
   font-size: 0.76rem;
 }
 
@@ -586,8 +582,7 @@ input[type="search"] {
 
 .list-answer p:last-child {
   margin: 0;
-  font-family: Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 650;
   line-height: 1.5;
 }
@@ -738,7 +733,6 @@ input[type="search"] {
 
 .loading-shell h1 {
   margin: 0.6rem 0;
-  font-family: Georgia, "Yu Mincho", serif;
 }
 
 .loading-shell p:last-child {
