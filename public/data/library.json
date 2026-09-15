@@ -1,0 +1,2291 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-15T05:12:26.989Z",
+  "cards": [
+    {
+      "id": "TD-0001",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "道案内",
+      "promptJa": "中央駅を出たら、メイン通りに沿って直進してください。",
+      "answerEn": "After leaving Central Station, go straight along Main Street.",
+      "phrases": [
+        "after leaving",
+        "go straight along"
+      ],
+      "points": [
+        "afterの後は動詞の-ing形。",
+        "leaveの後に場所を直接置く。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0002",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "道案内",
+      "promptJa": "メイン通りに沿って直進してください。",
+      "answerEn": "Go straight along Main Street.",
+      "phrases": [
+        "go straight along"
+      ],
+      "points": [
+        "alongは通りに沿った移動。",
+        "acrossは横断する移動。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0003",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "道案内",
+      "promptJa": "最初の薬局で右に曲がってください。",
+      "answerEn": "Turn right at the first drugstore.",
+      "phrases": [
+        "turn right at"
+      ],
+      "points": [
+        "曲がる目印の前にはatを使う。",
+        "左折ならturn left。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0004",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "道案内",
+      "promptJa": "ホテルは左手にあります。",
+      "answerEn": "The hotel will be on your left.",
+      "phrases": [
+        "on your left"
+      ],
+      "points": [
+        "道順の案内ではwill beも自然。",
+        "右手ならon your right。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0005",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "おすすめ",
+      "promptJa": "201号室をおすすめします。",
+      "answerEn": "I recommend Room 201.",
+      "phrases": [
+        "recommend"
+      ],
+      "points": [
+        "recommendの後は名詞または動詞の-ing形。",
+        "番号付きの部屋名はRoom 201。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0006",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "設備案内",
+      "promptJa": "この部屋は15人を収容できます。",
+      "answerEn": "This room can accommodate fifteen people.",
+      "phrases": [
+        "accommodate fifteen people"
+      ],
+      "points": [
+        "accommodateの直後に収容する人数を置く。",
+        "canの後は動詞の原形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0007",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "設備案内",
+      "promptJa": "15人を収容できる201号室をおすすめします。",
+      "answerEn": "I recommend Room 201, which can accommodate fifteen people.",
+      "phrases": [
+        "which can accommodate"
+      ],
+      "points": [
+        "コンマの後のwhich節でRoom 201の情報を補足する。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0008",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "利用時間",
+      "promptJa": "この部屋は午後3時から午後7時まで利用できます。",
+      "answerEn": "This room is available from 3 p.m. to 7 p.m.",
+      "phrases": [
+        "be available from",
+        "from 3 p.m. to 7 p.m."
+      ],
+      "points": [
+        "fromで開始、toで終了を示す。",
+        "文末のp.m.にさらにピリオドを重ねる必要はない。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0009",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "受け取り案内",
+      "promptJa": "午後に自転車を受け取れます。",
+      "answerEn": "You can pick up the bicycle in the afternoon.",
+      "phrases": [
+        "pick up",
+        "in the afternoon"
+      ],
+      "points": [
+        "代名詞ならpick it upの語順。",
+        "午後にはin the afternoonを使う。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0010",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "設備案内",
+      "promptJa": "この部屋にはプロジェクターがあります。",
+      "answerEn": "The room has a projector.",
+      "phrases": [
+        "have a projector"
+      ],
+      "points": [
+        "単数主語なのでhas。",
+        "初めて紹介する1台の機器にはaを付ける。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0011",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "料金案内",
+      "promptJa": "朝食は料金に含まれています。",
+      "answerEn": "Breakfast is included in the price.",
+      "phrases": [
+        "be included in the price"
+      ],
+      "points": [
+        "含まれる側を主語にするとbe included in。",
+        "朝食一般を指すBreakfastは無冠詞。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0012",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "利用ルール",
+      "promptJa": "飲み物はラウンジ内でのみ許可されています。",
+      "answerEn": "Drinks are allowed only in the lounge.",
+      "phrases": [
+        "be allowed",
+        "only in"
+      ],
+      "points": [
+        "複数主語なのでare。",
+        "only inで許可される場所を限定する。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0013",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "手伝いの申し出",
+      "promptJa": "プロジェクターの設置をお手伝いできます。",
+      "answerEn": "I can help you set up the projector.",
+      "phrases": [
+        "help you set up",
+        "set up"
+      ],
+      "points": [
+        "help + 人 + 動詞の原形。toを入れてもよい。",
+        "設置する動詞は2語のset up。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0014",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "依頼",
+      "promptJa": "金曜日までに詳細を送っていただけますか。",
+      "answerEn": "Could you send us the details by Friday?",
+      "phrases": [
+        "Could you send us",
+        "by Friday"
+      ],
+      "points": [
+        "Could youの後は動詞の原形。",
+        "byは行動を完了する期限を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0015",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "情報を尋ねる",
+      "promptJa": "何時に到着する予定か、教えていただけますか。",
+      "answerEn": "Could you tell me what time you expect to arrive?",
+      "phrases": [
+        "Could you tell me what time",
+        "expect to arrive"
+      ],
+      "points": [
+        "後半は疑問詞 + 主語 + 動詞の語順。",
+        "expect toの後は動詞の原形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0016",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "設備案内",
+      "promptJa": "2階には、仕事ができる静かなラウンジがあります。",
+      "answerEn": "There is a quiet lounge on the second floor where you can work.",
+      "phrases": [
+        "on the second floor",
+        "where you can work"
+      ],
+      "points": [
+        "階を示す前置詞はon。",
+        "where以下でその場所でできることを説明する。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0017",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "説明の依頼",
+      "promptJa": "新しいシステムの使い方を説明していただけますか。",
+      "answerEn": "Could you explain how to use the new system?",
+      "phrases": [
+        "explain how to use"
+      ],
+      "points": [
+        "how to + 動詞の原形で方法を表す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0018",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "料金案内",
+      "promptJa": "送料は商品の重さによって異なります。",
+      "answerEn": "The shipping fee depends on how heavy the item is.",
+      "phrases": [
+        "shipping fee",
+        "depend on"
+      ],
+      "points": [
+        "depend onの後には名詞や疑問詞節を置ける。",
+        "後半はhow heavy + 主語 + 動詞の語順。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0019",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "所要時間",
+      "promptJa": "お申し込みの処理には、通常3営業日かかります。",
+      "answerEn": "It usually takes three business days to process an application.",
+      "phrases": [
+        "It takes",
+        "business days",
+        "process an application"
+      ],
+      "points": [
+        "It takes + 期間 + to + 動詞の原形。",
+        "営業日はbusiness days。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0020",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "問い合わせ案内",
+      "promptJa": "ご質問がございましたら、お気軽にお問い合わせください。",
+      "answerEn": "Please feel free to contact us if you have any questions.",
+      "phrases": [
+        "feel free to",
+        "if you have any questions"
+      ],
+      "points": [
+        "feel free toの後は動詞の原形。",
+        "Please contact us if ...でも自然。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0021",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "助言の依頼",
+      "promptJa": "自分に合う講座の選び方について、何かアドバイスはありますか。",
+      "answerEn": "Do you have any advice on choosing a suitable course?",
+      "phrases": [
+        "advice on choosing"
+      ],
+      "points": [
+        "adviceは名詞、adviseは動詞。",
+        "onの後は名詞または動詞の-ing形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0022",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "日程変更",
+      "promptJa": "会議を金曜日に変更することは可能でしょうか。",
+      "answerEn": "Would it be possible to move our meeting to Friday?",
+      "phrases": [
+        "Would it be possible to",
+        "move our meeting to Friday"
+      ],
+      "points": [
+        "possible toの後は動詞の原形。",
+        "move A to Bで日程をBに変更する。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0023",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "期限変更",
+      "promptJa": "登録期限を月曜日まで延長していただけますか。",
+      "answerEn": "Could you extend the registration deadline to Monday?",
+      "phrases": [
+        "extend the deadline",
+        "to Monday"
+      ],
+      "points": [
+        "extend ... toで新しい期限を示す。",
+        "行動の完了期限を示すbyとは役割が異なる。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0024",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "代案の提示",
+      "promptJa": "あいにく月曜日は都合がつきませんが、火曜日なら空いています。",
+      "answerEn": "I'm afraid Monday doesn't work for me, but I am available on Tuesday.",
+      "phrases": [
+        "I'm afraid",
+        "work for me",
+        "be available on"
+      ],
+      "points": [
+        "I'm afraidで残念な知らせをやわらげる。",
+        "work for + 人は都合がよいという意味。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0025",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "理由の説明",
+      "promptJa": "商品が在庫切れのため、本日はご注文の商品を発送できません。",
+      "answerEn": "We cannot ship your order today because the item is out of stock.",
+      "phrases": [
+        "ship your order",
+        "out of stock"
+      ],
+      "points": [
+        "becauseの後は主語 + 動詞。",
+        "out of stockは在庫切れ。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0026",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "謝罪",
+      "promptJa": "誤ったファイルを送ってしまい、申し訳ありません。",
+      "answerEn": "I'm sorry for sending the wrong file.",
+      "phrases": [
+        "I'm sorry for",
+        "the wrong file"
+      ],
+      "points": [
+        "forの後は名詞または動詞の-ing形。",
+        "意図したものとは違う場合、the wrong ...が自然。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0027",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "問題の報告",
+      "promptJa": "受け取ったプリンターに問題があります。",
+      "answerEn": "There is a problem with the printer I received.",
+      "phrases": [
+        "a problem with",
+        "the printer I received"
+      ],
+      "points": [
+        "問題のある対象にはwith。",
+        "the printer (that) I receivedで対象を特定する。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0028",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "返金の依頼",
+      "promptJa": "この商品の返金をお願いしたいです。",
+      "answerEn": "I would like to request a refund for this item.",
+      "phrases": [
+        "request a refund",
+        "a refund for"
+      ],
+      "points": [
+        "requestの後に求めるものを置く。",
+        "a refund forの後に返金対象を置く。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0029",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "条件付き対応",
+      "promptJa": "レシートを送っていただければ、商品を交換できます。",
+      "answerEn": "If you send us a receipt, we can replace the item.",
+      "phrases": [
+        "If you send us",
+        "replace the item"
+      ],
+      "points": [
+        "未来の条件でも、このif節は現在形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0030",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "開催案内",
+      "promptJa": "雨が降った場合、イベントは屋内で開催されます。",
+      "answerEn": "If it rains, the event will be held indoors.",
+      "phrases": [
+        "be held indoors"
+      ],
+      "points": [
+        "rainは動詞としても使える。",
+        "開催されるはbe held。indoorsの前にinは不要。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0031",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "希望を伝える",
+      "promptJa": "午前の部に参加したいです。",
+      "answerEn": "I would like to attend the morning session.",
+      "phrases": [
+        "would like to attend"
+      ],
+      "points": [
+        "would like to + 動詞の原形で丁寧に希望を伝える。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0032",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "対応完了",
+      "promptJa": "交換品はすでに発送しました。",
+      "answerEn": "We have already sent a replacement.",
+      "phrases": [
+        "have already sent",
+        "replacement"
+      ],
+      "points": [
+        "have/has already + 過去分詞で完了した対応を伝える。",
+        "sendの過去形・過去分詞はsent。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0033",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "未着の連絡",
+      "promptJa": "確認メールがまだ届いていません。",
+      "answerEn": "I haven't received the confirmation email yet.",
+      "phrases": [
+        "confirmation email",
+        "haven't received ... yet"
+      ],
+      "points": [
+        "haven't/hasn't + 過去分詞 + yetで未完了を伝える。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0034",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "代わりの対応",
+      "promptJa": "返金する代わりに、交換品をお送りできます。",
+      "answerEn": "We can send a replacement instead of issuing a refund.",
+      "phrases": [
+        "instead of",
+        "issue a refund"
+      ],
+      "points": [
+        "instead ofの後は名詞または動詞の-ing形。",
+        "issue a refundは返金を行うこと。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0035",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "完了後の連絡",
+      "promptJa": "修理が完了し次第、ご連絡します。",
+      "answerEn": "I'll inform you once the repair is completed.",
+      "phrases": [
+        "once the repair is completed",
+        "as soon as"
+      ],
+      "points": [
+        "主節が未来でも、このonce節は現在形。",
+        "as soon as the repair is completedとも言える。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0036",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "情報の確認",
+      "promptJa": "料金に教材が含まれているか、確認していただけますか。",
+      "answerEn": "Could you confirm whether the fee includes materials?",
+      "phrases": [
+        "confirm whether"
+      ],
+      "points": [
+        "whetherは〜かどうか。",
+        "後半は主語 + 動詞の語順。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0037",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "提案",
+      "promptJa": "もっと早い列車に乗ることを提案します。",
+      "answerEn": "I suggest taking the earlier train.",
+      "phrases": [
+        "suggest taking"
+      ],
+      "points": [
+        "suggestの後に行動を置くなら動詞の-ing形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0038",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "写真描写の英文",
+      "promptJa": "テーブルの下に箱がいくつかあります。",
+      "answerEn": "There are several boxes under the table.",
+      "phrases": [
+        "There are",
+        "under the table"
+      ],
+      "points": [
+        "複数の箱なのでThere are。",
+        "underで下の位置を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0039",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "写真描写の英文",
+      "promptJa": "バッグを持った女性が、入り口に向かって歩いています。",
+      "answerEn": "The woman carrying a bag is walking toward the entrance.",
+      "phrases": [
+        "carrying a bag",
+        "walk toward"
+      ],
+      "points": [
+        "名詞の後の-ing形でどの人物かを説明する。",
+        "towardで移動する方向を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0040",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "写真描写の英文",
+      "promptJa": "男性が読書をしている一方、女性はノートパソコンを使っています。",
+      "answerEn": "A man is reading while a woman is using a laptop.",
+      "phrases": [
+        "while a woman is using"
+      ],
+      "points": [
+        "whileで同時に起きている動作をつなぐ。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0041",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "写真描写の英文",
+      "promptJa": "テーブルの周りに椅子が数脚並べられています。",
+      "answerEn": "Several chairs are arranged around a table.",
+      "phrases": [
+        "be arranged around"
+      ],
+      "points": [
+        "are arrangedで配置された状態を説明する。",
+        "aroundは周囲の位置。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0042",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "写真描写の英文",
+      "promptJa": "女性がほうきで床を掃いています。",
+      "answerEn": "A woman is sweeping the floor with a broom.",
+      "phrases": [
+        "sweep the floor",
+        "with a broom"
+      ],
+      "points": [
+        "道具を示すwith。",
+        "道具かどうかだけでa/theは決まらない。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0043",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "写真描写の英文",
+      "promptJa": "男性2人がテーブルを運んで出入り口を通り抜けています。",
+      "answerEn": "Two men are carrying a table through the doorway.",
+      "phrases": [
+        "carry a table",
+        "through the doorway"
+      ],
+      "points": [
+        "throughは通り抜ける移動。",
+        "複数主語なのでare carrying。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0044",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "意見を述べる",
+      "promptJa": "企業は柔軟な勤務時間を提供すべきだと思います。",
+      "answerEn": "I think companies should offer flexible working hours.",
+      "phrases": [
+        "I think",
+        "should offer"
+      ],
+      "points": [
+        "I thinkの後は主語 + 動詞。",
+        "shouldの後は動詞の原形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0045",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "教育についての意見",
+      "promptJa": "学校は生徒に料理の仕方を教えるべきだと思います。",
+      "answerEn": "I think schools should teach students how to cook.",
+      "phrases": [
+        "teach students how to cook"
+      ],
+      "points": [
+        "teach + 人 + how to + 動詞の原形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0046",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "理由を述べる",
+      "promptJa": "理由の一つは、従業員が時間を節約できることです。",
+      "answerEn": "One reason is that employees can save time.",
+      "phrases": [
+        "One reason is that",
+        "save time"
+      ],
+      "points": [
+        "thatの後に主語 + 動詞を置いて理由を説明する。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0047",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "具体例を示す",
+      "promptJa": "例えば、従業員は節約した時間を運動に使えます。",
+      "answerEn": "For example, employees can use the time they save to exercise.",
+      "phrases": [
+        "For example",
+        "use the time to exercise"
+      ],
+      "points": [
+        "the time they saveは節約した時間。",
+        "to exerciseで時間の使い道を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0048",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "別の側面を認める",
+      "promptJa": "在宅勤務は便利ですが、孤独に感じることもあります。",
+      "answerEn": "Although working from home is convenient, it can be lonely.",
+      "phrases": [
+        "Although",
+        "working from home"
+      ],
+      "points": [
+        "Although A, Bで対比する。butを重ねない。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0049",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "比較",
+      "promptJa": "電車に乗るほうが、車を運転するより安く済みます。",
+      "answerEn": "Taking the train is cheaper than driving.",
+      "phrases": [
+        "cheaper than"
+      ],
+      "points": [
+        "比較する行動を-ing形でそろえる。",
+        "cheaperにmoreを重ねない。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0050",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "効果を説明する",
+      "promptJa": "柔軟な勤務時間によって、従業員は家族と過ごす時間を増やせます。",
+      "answerEn": "Flexible working hours allow employees to spend more time with their families.",
+      "phrases": [
+        "allow employees to",
+        "spend more time with"
+      ],
+      "points": [
+        "allow + 人 + to + 動詞の原形。",
+        "複数主語なのでallow。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0051",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "負担の軽減",
+      "promptJa": "在宅勤務は、従業員の通勤時間を減らせます。",
+      "answerEn": "Working from home can reduce employees' commuting time.",
+      "phrases": [
+        "reduce commuting time"
+      ],
+      "points": [
+        "reduceの直後に減らすものを置く。",
+        "employees'は複数の従業員の所有を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0052",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "効果を説明する",
+      "promptJa": "毎日練習すると、もっと自信がつきます。",
+      "answerEn": "Practicing every day will make you more confident.",
+      "phrases": [
+        "make you more confident"
+      ],
+      "points": [
+        "make + 人 + 形容詞で状態の変化を表す。",
+        "-ing形のまとまりを主語にできる。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0053",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "添付の案内",
+      "promptJa": "ご確認いただけるよう、更新した日程表を添付しました。",
+      "answerEn": "I've attached the updated schedule for your review.",
+      "phrases": [
+        "attach the updated schedule",
+        "for your review"
+      ],
+      "points": [
+        "for your reviewはご確認用にという意味。",
+        "I attachedとも言える。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0054",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "参加条件",
+      "promptJa": "この講座を受けるために、事前の経験は必要ありません。",
+      "answerEn": "You don't need previous experience to take this course.",
+      "phrases": [
+        "previous experience",
+        "take this course"
+      ],
+      "points": [
+        "経験一般を表すexperienceは無冠詞。",
+        "don't need + 名詞 + to + 動詞の原形。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0055",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "好みの比較",
+      "promptJa": "私は電話をかけるより、メールを送るほうが好きです。",
+      "answerEn": "I prefer sending an email to making a phone call.",
+      "phrases": [
+        "prefer sending to making",
+        "make a phone call"
+      ],
+      "points": [
+        "prefer A to BでBよりAを好む。",
+        "行動を比較するなら-ing形でそろえる。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0056",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "手段の説明",
+      "promptJa": "このアプリを使うことで、毎月の支出を簡単に確認できます。",
+      "answerEn": "You can easily check your monthly expenses by using this app.",
+      "phrases": [
+        "monthly expenses",
+        "by using"
+      ],
+      "points": [
+        "by + 動詞の-ing形で手段を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0057",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "発送の案内",
+      "promptJa": "交換品を3営業日以内に発送します。",
+      "answerEn": "We will ship a replacement within three business days.",
+      "phrases": [
+        "within three business days",
+        "ship a replacement"
+      ],
+      "points": [
+        "within + 期間でその期間内に完了することを示す。",
+        "shipは発送すること。到着までを保証する表現ではない。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0058",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "商品の問題",
+      "promptJa": "色が、注文したものとは違います。",
+      "answerEn": "The color is different from the one I ordered.",
+      "phrases": [
+        "different from",
+        "the one I ordered"
+      ],
+      "points": [
+        "different from + 比較対象。",
+        "the oneはここでは注文した色を指す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0059",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "メールの結び",
+      "promptJa": "ご返信をお待ちしております。",
+      "answerEn": "I look forward to your reply.",
+      "phrases": [
+        "look forward to"
+      ],
+      "points": [
+        "toの後は名詞または動詞の-ing形。",
+        "I look forward to hearing from you.とも言える。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0060",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "選択肢の案内",
+      "promptJa": "青と黒のどちらかをお選びいただけます。",
+      "answerEn": "You can choose between blue and black.",
+      "phrases": [
+        "choose between"
+      ],
+      "points": [
+        "choose between A and Bで二つの選択肢を示す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0061",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "写真描写の英文",
+      "promptJa": "男性が自転車を壁に立てかけています。",
+      "answerEn": "A man is leaning a bicycle against the wall.",
+      "phrases": [
+        "lean a bicycle against"
+      ],
+      "points": [
+        "lean + 物 + againstで物を立てかける。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0062",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "写真描写の英文",
+      "promptJa": "男性がスーツケースをトランクへ積み込んでいます。",
+      "answerEn": "A man is loading a suitcase into the trunk.",
+      "phrases": [
+        "load a suitcase into"
+      ],
+      "points": [
+        "intoは中への移動。",
+        "luggageは不可算名詞。1個のスーツケースはa suitcase。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0063",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "写真描写の英文",
+      "promptJa": "男性がバスケットの隣でタオルを畳んでいます。",
+      "answerEn": "A man is folding a towel next to a basket.",
+      "phrases": [
+        "fold a towel",
+        "next to"
+      ],
+      "points": [
+        "aの後は単数名詞。",
+        "next toは隣の位置。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0064",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "迎えの申し出",
+      "promptJa": "必要であれば、駅でお迎えすることもできます。",
+      "answerEn": "I can pick you up at the station if needed.",
+      "phrases": [
+        "pick you up",
+        "if needed"
+      ],
+      "points": [
+        "代名詞はpickとupの間に置く。",
+        "if neededは必要であればという意味。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0065",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "設備案内",
+      "promptJa": "この会場は80人を収容でき、無料の駐車場もあります。",
+      "answerEn": "This venue can accommodate eighty people and has free parking.",
+      "phrases": [
+        "accommodate eighty people",
+        "free parking"
+      ],
+      "points": [
+        "parkingはこの意味では不可算名詞。",
+        "一つの駐車場を数えるならa parking lot。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0066",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "効果を説明する",
+      "promptJa": "短い休憩を取ると、仕事に集中しやすくなります。",
+      "answerEn": "Taking a short break can help you concentrate on your work.",
+      "phrases": [
+        "take a short break",
+        "concentrate on"
+      ],
+      "points": [
+        "concentrate on + 対象。",
+        "help + 人 + 動詞の原形で行動を助けることを表す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0067",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "参加方法",
+      "promptJa": "会議には、オンラインか対面のどちらかで参加できます。",
+      "answerEn": "You can attend the meeting online or in person.",
+      "phrases": [
+        "attend the meeting",
+        "in person",
+        "on-site"
+      ],
+      "points": [
+        "in personは対面での参加。",
+        "会場での参加という場所を強調するならon-siteも使える。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0068",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "謝罪",
+      "promptJa": "配送が遅れてしまい、申し訳ありません。",
+      "answerEn": "I'm sorry for the delay in delivery.",
+      "phrases": [
+        "a delay in delivery"
+      ],
+      "points": [
+        "sorry forの後に名詞を置く形。",
+        "deliveryは届けること、shipmentは発送や貨物を指す。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0069",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "返品条件",
+      "promptJa": "この商品は、購入日から30日以内であれば返品できます。",
+      "answerEn": "This item can be returned within thirty days of purchase.",
+      "phrases": [
+        "within thirty days of purchase",
+        "can be returned"
+      ],
+      "points": [
+        "within + 期間 + of purchaseで購入を起点にした期間を表す。",
+        "返品される商品を主語にした受動態。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0070",
+      "addedAt": "2026-09-15",
+      "source": [
+        "日常英語"
+      ],
+      "difficulty": "Easy",
+      "theme": "費用の節約",
+      "promptJa": "自宅で料理をすると、食費を節約できます。",
+      "answerEn": "Cooking at home can help you save money on food.",
+      "phrases": [
+        "save money on food"
+      ],
+      "points": [
+        "save money on + 対象で、その対象にかかる費用を節約する。",
+        "reduce your food expensesとも表せる。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0071",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Easy",
+      "theme": "謝罪",
+      "promptJa": "サイズ違いの商品をお送りしてしまい、申し訳ありません。",
+      "answerEn": "I'm sorry for sending you an item in the wrong size.",
+      "phrases": [
+        "in the wrong size"
+      ],
+      "points": [
+        "in + 色・サイズで商品を後ろから説明する。",
+        "the wrongは本来の正しいものとは違うという意味。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TD-0072",
+      "addedAt": "2026-09-15",
+      "source": [
+        "TOEIC S&W対策"
+      ],
+      "difficulty": "Medium",
+      "theme": "代案の提示",
+      "promptJa": "ご希望の商品は在庫切れですが、代わりに別の色の商品をお送りできます。",
+      "answerEn": "The item you want is out of stock, but we can send one in a different color instead.",
+      "phrases": [
+        "out of stock",
+        "in a different color",
+        "instead"
+      ],
+      "points": [
+        "oneは前に出た商品を指す。",
+        "in a different colorで別の色を示す。",
+        "代わりの対象が明らかなら文末のinsteadだけでもよい。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    }
+  ],
+  "terms": [
+    {
+      "id": "TERM-0001",
+      "expression": "make a phone call",
+      "meaningJa": "電話をかける",
+      "exampleEn": "I need to make a phone call before the meeting.",
+      "pointJa": "相手を直接言うならcall youやcall the hotelも自然。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0055"
+      ]
+    },
+    {
+      "id": "TERM-0002",
+      "expression": "set up",
+      "meaningJa": "設置・設定する",
+      "exampleEn": "I can help you set up the projector.",
+      "pointJa": "動詞は2語。setupは名詞・形容詞として使う形。",
+      "tags": [
+        "日常",
+        "TAM",
+        "句動詞"
+      ],
+      "cardIds": [
+        "TD-0013"
+      ]
+    },
+    {
+      "id": "TERM-0003",
+      "expression": "pick someone up",
+      "meaningJa": "人を迎えに行く",
+      "exampleEn": "I can pick you up at the station.",
+      "pointJa": "代名詞はpickとupの間に置く。",
+      "tags": [
+        "日常",
+        "句動詞"
+      ],
+      "cardIds": [
+        "TD-0064"
+      ]
+    },
+    {
+      "id": "TERM-0004",
+      "expression": "business day",
+      "meaningJa": "営業日",
+      "exampleEn": "We will reply within three business days.",
+      "pointJa": "日数が複数ならbusiness days。対象組織の営業日を指す。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0019",
+        "TD-0057"
+      ]
+    },
+    {
+      "id": "TERM-0005",
+      "expression": "confirmation email",
+      "meaningJa": "確認メール",
+      "exampleEn": "I haven't received the confirmation email yet.",
+      "pointJa": "a confirmation emailだが、an email。冠詞は直後の語の音で決まる。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0033"
+      ]
+    },
+    {
+      "id": "TERM-0006",
+      "expression": "shipping fee",
+      "meaningJa": "配送料",
+      "exampleEn": "Does the price include the shipping fee?",
+      "pointJa": "feeは数えられる名詞。文脈に応じてa/theなどを付ける。",
+      "tags": [
+        "日常",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0018"
+      ]
+    },
+    {
+      "id": "TERM-0007",
+      "expression": "out of stock",
+      "meaningJa": "在庫切れで",
+      "exampleEn": "The item is currently out of stock.",
+      "pointJa": "be out of stockで在庫のない状態を表す。",
+      "tags": [
+        "日常",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0025",
+        "TD-0072"
+      ]
+    },
+    {
+      "id": "TERM-0008",
+      "expression": "replacement",
+      "meaningJa": "交換品",
+      "exampleEn": "We have sent a replacement.",
+      "pointJa": "交換品1個ならa replacement。",
+      "tags": [
+        "日常",
+        "TAM",
+        "単語"
+      ],
+      "cardIds": [
+        "TD-0032",
+        "TD-0034",
+        "TD-0057"
+      ]
+    },
+    {
+      "id": "TERM-0009",
+      "expression": "request a refund",
+      "meaningJa": "返金を求める",
+      "exampleEn": "I would like to request a refund.",
+      "pointJa": "返金を求める側の表現。返金対象にはfor this itemなどを続ける。",
+      "tags": [
+        "日常",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0028"
+      ]
+    },
+    {
+      "id": "TERM-0010",
+      "expression": "extend the deadline",
+      "meaningJa": "期限を延長する",
+      "exampleEn": "Could you extend the deadline to Monday?",
+      "pointJa": "新しい期限はto、行動を完了する期限はbyで示せる。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0023"
+      ]
+    },
+    {
+      "id": "TERM-0011",
+      "expression": "work for someone",
+      "meaningJa": "人にとって都合がよい",
+      "exampleEn": "Does Friday work for you?",
+      "pointJa": "日程が主語なら都合のよさを表せる。働くという意味に限らない。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0024"
+      ]
+    },
+    {
+      "id": "TERM-0012",
+      "expression": "suggest an alternative",
+      "meaningJa": "別の案を提案する",
+      "exampleEn": "Could you suggest an alternative?",
+      "pointJa": "suggestの後は名詞または-ing形。関連カードはtakingを使った同じ提案の型。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0037"
+      ]
+    },
+    {
+      "id": "TERM-0013",
+      "expression": "for your review",
+      "meaningJa": "ご確認用に",
+      "exampleEn": "I've attached the document for your review.",
+      "pointJa": "添付や共有の目的を短く示す表現。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0053"
+      ]
+    },
+    {
+      "id": "TERM-0014",
+      "expression": "previous experience",
+      "meaningJa": "事前の経験",
+      "exampleEn": "You don't need previous experience to join.",
+      "pointJa": "経験一般を表すexperienceは不可算名詞。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0054"
+      ]
+    },
+    {
+      "id": "TERM-0015",
+      "expression": "in a different color",
+      "meaningJa": "別の色で",
+      "exampleEn": "We can send the item in a different color.",
+      "pointJa": "in a different sizeも自然。色だからa、サイズだからtheという区分ではない。",
+      "tags": [
+        "日常",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0072"
+      ]
+    },
+    {
+      "id": "TERM-0016",
+      "expression": "in the wrong size",
+      "meaningJa": "サイズ違いで",
+      "exampleEn": "I received the shoes in the wrong size.",
+      "pointJa": "注文などの基準に合わないことを表す。in the wrong colorとも言える。",
+      "tags": [
+        "日常",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0071"
+      ]
+    },
+    {
+      "id": "TERM-0017",
+      "expression": "different from",
+      "meaningJa": "〜とは異なる",
+      "exampleEn": "The result is different from what I expected.",
+      "pointJa": "fromの後に比較する対象を置く。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0058"
+      ]
+    },
+    {
+      "id": "TERM-0018",
+      "expression": "save money on",
+      "meaningJa": "〜にかかるお金を節約する",
+      "exampleEn": "Cooking at home helps me save money on food.",
+      "pointJa": "onの後に費用がかかる対象を置く。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0070"
+      ]
+    },
+    {
+      "id": "TERM-0019",
+      "expression": "save time",
+      "meaningJa": "時間を節約する",
+      "exampleEn": "Booking online can save time.",
+      "pointJa": "一般的な時間の節約ならtimeを無冠詞で使える。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0046",
+        "TD-0047"
+      ]
+    },
+    {
+      "id": "TERM-0020",
+      "expression": "free parking",
+      "meaningJa": "無料の駐車設備・利用",
+      "exampleEn": "The hotel offers free parking.",
+      "pointJa": "parkingはこの意味では不可算。駐車場を一つと数えるならa parking lot。",
+      "tags": [
+        "日常",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0065"
+      ]
+    },
+    {
+      "id": "TERM-0021",
+      "expression": "take a short break",
+      "meaningJa": "短い休憩を取る",
+      "exampleEn": "Let's take a short break.",
+      "pointJa": "take a breakをひとまとまりで使う。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0066"
+      ]
+    },
+    {
+      "id": "TERM-0022",
+      "expression": "concentrate on",
+      "meaningJa": "〜に集中する",
+      "exampleEn": "I need to concentrate on this task.",
+      "pointJa": "対象の前の前置詞はon。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0066"
+      ]
+    },
+    {
+      "id": "TERM-0023",
+      "expression": "look forward to",
+      "meaningJa": "〜を楽しみに待つ",
+      "exampleEn": "I look forward to hearing from you.",
+      "pointJa": "toは前置詞なので、その後は名詞または-ing形。返信を待つ丁寧な結びにも使う。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0059"
+      ]
+    },
+    {
+      "id": "TERM-0024",
+      "expression": "wait for",
+      "meaningJa": "〜を待つ",
+      "exampleEn": "We are waiting for your confirmation.",
+      "pointJa": "waitの後に待つ対象を置くならforが必要。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "ED-0067"
+      ]
+    },
+    {
+      "id": "TERM-0025",
+      "expression": "in person",
+      "meaningJa": "対面で",
+      "exampleEn": "We can discuss the issue in person.",
+      "pointJa": "onlineと対比して、直接会う参加方法を表す。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0067"
+      ]
+    },
+    {
+      "id": "TERM-0026",
+      "expression": "on-site",
+      "meaningJa": "現地・会場で",
+      "exampleEn": "An engineer will provide support on-site.",
+      "pointJa": "場所を強調する表現。関連カードのin personは参加方法を強調する。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0067"
+      ]
+    },
+    {
+      "id": "TERM-0027",
+      "expression": "choose between",
+      "meaningJa": "二つから選ぶ",
+      "exampleEn": "You can choose between the two options.",
+      "pointJa": "AとBを並べる場合はchoose between A and B。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0060"
+      ]
+    },
+    {
+      "id": "TERM-0028",
+      "expression": "as soon as",
+      "meaningJa": "〜し次第",
+      "exampleEn": "I'll contact you as soon as I have an update.",
+      "pointJa": "未来の話でも、as soon asで始まる時を表す節は現在形。関連カードのonceも完了後の連絡に使える。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0035"
+      ]
+    },
+    {
+      "id": "TERM-0029",
+      "expression": "if needed",
+      "meaningJa": "必要であれば",
+      "exampleEn": "I can provide more details if needed.",
+      "pointJa": "必要かどうかを条件にする短い表現。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0064"
+      ]
+    },
+    {
+      "id": "TERM-0030",
+      "expression": "feel free to",
+      "meaningJa": "お気軽に〜してください",
+      "exampleEn": "Please feel free to contact us.",
+      "pointJa": "toの後は動詞の原形。問い合わせを歓迎する場面に使える。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0020"
+      ]
+    },
+    {
+      "id": "TERM-0031",
+      "expression": "a delay in delivery",
+      "meaningJa": "配送の遅れ",
+      "exampleEn": "I'm sorry for the delay in delivery.",
+      "pointJa": "発送を遅らせたことへの謝罪はsorry for delaying the shipmentとも言える。",
+      "tags": [
+        "日常",
+        "連語"
+      ],
+      "cardIds": [
+        "TD-0068"
+      ]
+    },
+    {
+      "id": "TERM-0032",
+      "expression": "within thirty days of purchase",
+      "meaningJa": "購入から30日以内",
+      "exampleEn": "You can return the item within thirty days of purchase.",
+      "pointJa": "within + 期間 + of purchaseで購入を起点にする。",
+      "tags": [
+        "日常",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "TD-0069"
+      ]
+    },
+    {
+      "id": "TERM-0033",
+      "expression": "let me confirm",
+      "meaningJa": "確認させてください",
+      "exampleEn": "Let me confirm the next action.",
+      "pointJa": "let + 人 + 動詞の原形。確認したい内容を続ける。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "ED-0001",
+        "ED-0004"
+      ]
+    },
+    {
+      "id": "TERM-0034",
+      "expression": "break up",
+      "meaningJa": "音声などが途切れる",
+      "exampleEn": "Your audio broke up a little.",
+      "pointJa": "音声や通話が主語なら途切れるという意味。過去形はbroke up。",
+      "tags": [
+        "日常",
+        "TAM",
+        "句動詞"
+      ],
+      "cardIds": [
+        "ED-0002"
+      ]
+    },
+    {
+      "id": "TERM-0035",
+      "expression": "for the first time in a while",
+      "meaningJa": "久しぶりに",
+      "exampleEn": "I met an old friend for the first time in a while.",
+      "pointJa": "しばらくぶりに行ったことを表す。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "ED-0003"
+      ]
+    },
+    {
+      "id": "TERM-0036",
+      "expression": "wrap up",
+      "meaningJa": "締めくくる",
+      "exampleEn": "Let's wrap up the meeting.",
+      "pointJa": "会議や作業を終える場面で使える。",
+      "tags": [
+        "日常",
+        "TAM",
+        "句動詞"
+      ],
+      "cardIds": [
+        "ED-0009",
+        "ED-0030",
+        "ED-0077",
+        "ED-0086"
+      ]
+    },
+    {
+      "id": "TERM-0037",
+      "expression": "make time",
+      "meaningJa": "時間を作る",
+      "exampleEn": "I can make time this afternoon.",
+      "pointJa": "forを続けると時間を作る対象を示せる。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "ED-0021"
+      ]
+    },
+    {
+      "id": "TERM-0038",
+      "expression": "be on the same page",
+      "meaningJa": "認識が一致している",
+      "exampleEn": "Let's make sure we're on the same page.",
+      "pointJa": "本のページではなく共通理解を表す比喩的表現。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "ED-0025"
+      ]
+    },
+    {
+      "id": "TERM-0039",
+      "expression": "back-to-back meetings",
+      "meaningJa": "連続した会議",
+      "exampleEn": "I had back-to-back meetings this morning.",
+      "pointJa": "back-to-backで間を空けずに続くことを示す。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "ED-0026"
+      ]
+    },
+    {
+      "id": "TERM-0040",
+      "expression": "focus on",
+      "meaningJa": "〜に集中する",
+      "exampleEn": "Let's focus on the most important issue.",
+      "pointJa": "onの後に集中する対象を置く。concentrate onと近い表現。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "ED-0027",
+        "ED-0048",
+        "TD-0066"
+      ]
+    },
+    {
+      "id": "TERM-0041",
+      "expression": "make a decision",
+      "meaningJa": "決定する",
+      "exampleEn": "We need more information before we make a decision.",
+      "pointJa": "decisionが名詞、decideが動詞。",
+      "tags": [
+        "日常",
+        "TAM",
+        "連語"
+      ],
+      "cardIds": [
+        "ED-0033"
+      ]
+    },
+    {
+      "id": "TERM-0042",
+      "expression": "in advance",
+      "meaningJa": "事前に",
+      "exampleEn": "Please let me know in advance.",
+      "pointJa": "実行や出来事より前に行うことを表す。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "ED-0058"
+      ]
+    },
+    {
+      "id": "TERM-0043",
+      "expression": "keep in mind",
+      "meaningJa": "覚えておく・念頭に置く",
+      "exampleEn": "Keep in mind that the schedule may change.",
+      "pointJa": "that + 主語 + 動詞で覚えておく内容を示せる。",
+      "tags": [
+        "日常",
+        "TAM",
+        "慣用表現"
+      ],
+      "cardIds": [
+        "ED-0080"
+      ]
+    },
+    {
+      "id": "TERM-0044",
+      "expression": "go over",
+      "meaningJa": "確認する・一通り説明する",
+      "exampleEn": "Let's go over the main points.",
+      "pointJa": "会議で項目を順に確認する場面に使える。",
+      "tags": [
+        "日常",
+        "TAM",
+        "句動詞"
+      ],
+      "cardIds": [
+        "ED-0082"
+      ]
+    }
+  ]
+}

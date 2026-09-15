@@ -24,6 +24,26 @@ export interface CardsDocument {
   cards: DrillCard[];
 }
 
+export type CollectionId = "tam" | "toeic-daily";
+
+export interface StudyCard extends DrillCard {
+  collectionId: CollectionId;
+}
+
+export interface GlossaryTerm {
+  id: string;
+  expression: string;
+  meaningJa: string;
+  exampleEn: string;
+  pointJa: string;
+  tags: string[];
+  cardIds: string[];
+}
+
+export interface LibraryDocument extends CardsDocument {
+  terms: GlossaryTerm[];
+}
+
 export type CardStatusFilter = ReviewStatus | "all" | "regular";
 
 export interface CardFilters {

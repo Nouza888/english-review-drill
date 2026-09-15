@@ -1,7 +1,11 @@
-import type { Difficulty, DrillCard } from "../types";
-import { createShuffledQueue, filterCards } from "../lib/cards";
+import type { Difficulty, DrillCard, GlossaryTerm, StudyCard } from "../types";
+import { createShuffledQueue } from "../lib/cards";
+import {
+  COLLECTION_LABELS, filterGlossary, filterStudyCards, relatedTerms, termCollections,
+  type CollectionId,
+} from "../lib/library";
 
-type Route = "drill" | "list";
+type Route = "drill" | "list" | "glossary";
 type DrillPool = "review" | "mastered" | "all";
 type StatusFilter = "all" | "review" | "mastered" | "regular";
 
@@ -29,16 +33,14 @@ interface DeckState {
 const ALL = "__all__";
 const UNSET = "__unset__";
 
-export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: string): void {
+export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: string, terms: GlossaryTerm[]): void {
   const cardsById = new Map(cards.map((card) => [card.id, card]));
-  const themes = uniqueSorted(cards.map((card) => card.theme));
-  const sources = uniqueSorted(cards.flatMap((card) => card.source));
-  const difficulties = (["Easy", "Medium", "Hard"] as const).filter((difficulty) =>
-    cards.some((card) => card.difficulty === difficulty),
-  );
-  const hasUnsetDifficulty = cards.some((card) => card.difficulty === null);
+  const glossaryTags = uniqueSorted(terms.flatMap((term) => term.tags));
 
   let route = routeFromHash(window.location.hash);
+  let collectionId: CollectionId = "tam";
+  let glossaryQuery = "";
+  let glossaryTag = ALL;
   let answerVisible = false;
   let drillFilters: DrillFilters = { pool: "review", theme: ALL, difficulty: ALL };
   let listFilters: ListFilters = {
@@ -53,9 +55,10 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
   resetDeck();
   renderShell();
 
-  if (!window.location.hash || !/^#\/(drill|list)$/.test(window.location.hash)) {
+  if (!isValidHash(window.location.hash)) {
     window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#/drill`);
   }
+  focusLinkedTerm();
 
   root.addEventListener("click", handleClick);
   root.addEventListener("change", handleChange);
@@ -63,9 +66,25 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
   window.addEventListener("hashchange", handleHashChange);
   window.addEventListener("keydown", handleKeyboardShortcut);
 
+  function collectionCards(): StudyCard[] {
+    return cards.filter((card) => card.collectionId === collectionId);
+  }
+
+  function collectionOptions(): { themes: string[]; sources: string[]; difficulties: string[]; hasUnsetDifficulty: boolean } {
+    const scoped = collectionCards();
+    return {
+      themes: uniqueSorted(scoped.map((card) => card.theme)),
+      sources: uniqueSorted(scoped.flatMap((card) => card.source)),
+      difficulties: (["Easy", "Medium", "Hard"] as const).filter((difficulty) => scoped.some((card) => card.difficulty === difficulty)),
+      hasUnsetDifficulty: scoped.some((card) => card.difficulty === null),
+    };
+  }
+
   function renderShell(): void {
-    const reviewCount = cards.filter((card) => card.reviewStatus === "review").length;
-    const masteredCount = cards.filter((card) => card.reviewStatus === "mastered").length;
+    const scoped = collectionCards();
+    const reviewCount = scoped.filter((card) => card.reviewStatus === "review").length;
+    const masteredCount = scoped.filter((card) => card.reviewStatus === "mastered").length;
+    const pageLabel = { drill: "ドリル", list: "問題一覧", glossary: "用語集" }[route];
 
     root.innerHTML = `
       <header class="site-header">
@@ -73,39 +92,54 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
           <a class="brand" href="#/drill" aria-label="瞬発英語ドリル ホーム">
             <span class="brand-mark" aria-hidden="true">Aa</span>
             <span>
-              <span class="eyebrow">Instant English</span>
+              <span class="eyebrow">English Review</span>
               <span class="brand-title">瞬発英語ドリル</span>
             </span>
           </a>
           <nav class="primary-nav" aria-label="メインメニュー">
             <a href="#/drill" ${route === "drill" ? 'aria-current="page"' : ""}>ドリル</a>
             <a href="#/list" ${route === "list" ? 'aria-current="page"' : ""}>問題一覧</a>
+            <a href="#/glossary" ${route === "glossary" ? 'aria-current="page"' : ""}>用語集</a>
           </nav>
         </div>
       </header>
       <main id="main-content" class="page-shell" tabindex="-1">
-        <section class="page-heading" aria-labelledby="page-title">
-          <div>
-            <p class="eyebrow">${route === "drill" ? "Quick practice" : "Card library"}</p>
-            <h1 id="page-title">${route === "drill" ? "英語を瞬発的に組み立てる" : "収録問題を探す"}</h1>
-            <p>${route === "drill" ? "まず日本語から英文を考え、準備ができたら模範解答を確認します。" : "日本語・英語・フレーズを横断して検索できます。"}</p>
-          </div>
-          <dl class="summary-stats" aria-label="収録状況">
-            <div><dt>全問題</dt><dd>${cards.length}</dd></div>
+        <h1 class="sr-only">${pageLabel}</h1>
+        ${route !== "glossary" ? renderCollectionSwitch() : ""}
+        <div class="summary-bar">
+          ${route === "glossary" ? `
+          <dl class="summary-stats" aria-label="用語集の収録状況">
+            <div><dt>共通の表現・用語</dt><dd>${terms.length}</dd></div>
+          </dl>` : `
+          <dl class="summary-stats" aria-label="${escapeAttribute(COLLECTION_LABELS[collectionId])}の収録状況">
+            <div><dt>全問題</dt><dd>${scoped.length}</dd></div>
             <div><dt>要復習</dt><dd>${reviewCount}</dd></div>
             <div><dt>定着済み</dt><dd>${masteredCount}</dd></div>
-          </dl>
-        </section>
-        ${route === "drill" ? renderDrillRoute() : renderListRoute()}
+          </dl>`}
+        </div>
+        ${route === "drill" ? renderDrillRoute() : route === "list" ? renderListRoute() : renderGlossaryRoute()}
       </main>
       <footer class="site-footer">
-        <span>個人用・端末内で動作</span>
         <span>データ更新: ${escapeHtml(formatDate(generatedAt))}</span>
       </footer>
     `;
   }
 
+  function renderCollectionSwitch(): string {
+    return `
+      <div class="collection-switch" role="group" aria-label="教材を選ぶ">
+        ${(["tam", "toeic-daily"] as const).map((id) => `
+          <button type="button" data-action="collection" data-collection="${id}" aria-pressed="${collectionId === id}">
+            <span>${escapeHtml(COLLECTION_LABELS[id])}</span>
+            <span class="collection-count">${cards.filter((card) => card.collectionId === id).length}問</span>
+          </button>
+        `).join("")}
+      </div>
+    `;
+  }
+
   function renderDrillRoute(): string {
+    const { themes, difficulties, hasUnsetDifficulty } = collectionOptions();
     return `
       <section class="workspace" aria-label="ドリル">
         <div class="filter-bar drill-filters" aria-label="出題条件">
@@ -182,7 +216,7 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
     `;
   }
 
-  function renderAnswer(card: DrillCard): string {
+  function renderAnswer(card: StudyCard): string {
     return `
       <section class="answer-block" aria-live="polite" aria-labelledby="answer-heading">
         <p id="answer-heading" class="prompt-label">模範解答</p>
@@ -197,11 +231,13 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
             ${renderStringList(card.points, "登録なし")}
           </div>
         </div>
+        ${renderRelatedTerms(card.id)}
       </section>
     `;
   }
 
   function renderListRoute(): string {
+    const { themes, sources, difficulties, hasUnsetDifficulty } = collectionOptions();
     return `
       <section class="workspace" aria-label="問題一覧">
         <div class="search-block">
@@ -289,6 +325,7 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
                 <div><h3>Reusable phrases</h3>${renderStringList(card.phrases, "登録なし", "en")}</div>
                 <div><h3>重要ポイント</h3>${renderStringList(card.points, "登録なし")}</div>
               </div>
+              ${renderRelatedTerms(card.id)}
             </div>
           </details>
         `,
@@ -296,11 +333,89 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
       .join("");
   }
 
+  function renderRelatedTerms(cardId: string): string {
+    const related = relatedTerms(terms, cardId);
+    if (related.length === 0) return "";
+    return `<div class="related-terms"><h3>用語集で確認</h3><div class="term-links">${related.map((term) =>
+      `<a href="#/glossary/${escapeAttribute(term.id)}" lang="en">${escapeHtml(term.expression)}</a>`,
+    ).join("")}</div></div>`;
+  }
+
+  function renderGlossaryRoute(): string {
+    return `
+      <section class="workspace" aria-label="共通の表現・用語集">
+        <div class="glossary-filters">
+          <div class="search-block">
+            <label for="glossary-search">表現・用語を検索</label>
+            <div class="search-input-wrap">
+              <span aria-hidden="true">⌕</span>
+              <input id="glossary-search" name="glossary-search" type="search" value="${escapeAttribute(glossaryQuery)}" placeholder="英語・日本語・例文から検索" autocomplete="off" />
+            </div>
+          </div>
+          <label class="glossary-tag-label"><span>タグ</span>
+            <select name="glossary-tag">
+              ${option(ALL, "すべて", glossaryTag)}
+              ${glossaryTags.map((tag) => option(tag, tag, glossaryTag)).join("")}
+            </select>
+          </label>
+        </div>
+        <div class="result-summary" role="status"><strong id="glossary-count">${filteredTerms().length}</strong><span>件の表現・用語</span></div>
+        <div id="glossary-results" class="glossary-list">${renderGlossaryResultsMarkup()}</div>
+      </section>`;
+  }
+
+  function filteredTerms(): GlossaryTerm[] {
+    return filterGlossary(terms, glossaryQuery, glossaryTag === ALL ? undefined : glossaryTag);
+  }
+
+  function renderGlossaryResultsMarkup(): string {
+    const results = filteredTerms();
+    if (results.length === 0) return '<div class="empty-state compact"><h2>該当する表現・用語はありません</h2><p>検索語またはタグを変更してください。</p></div>';
+    return results.map((term) => {
+      const linkedCards = term.cardIds.map((id) => cardsById.get(id)).filter((card): card is StudyCard => Boolean(card));
+      return `
+        <article class="glossary-card" id="term-${escapeAttribute(term.id)}" tabindex="-1" aria-labelledby="heading-${escapeAttribute(term.id)}">
+          <div class="badge-row">
+            ${term.tags.map((tag) => `<span class="badge badge-neutral">${escapeHtml(tag)}</span>`).join("")}
+            ${termCollections(term, cards).map((id) => `<span class="badge badge-collection">${escapeHtml(COLLECTION_LABELS[id])}</span>`).join("")}
+          </div>
+          <h2 id="heading-${escapeAttribute(term.id)}" lang="en">${escapeHtml(term.expression)}</h2>
+          <p class="term-meaning">${escapeHtml(term.meaningJa)}</p>
+          <p class="term-example" lang="en">${escapeHtml(term.exampleEn)}</p>
+          <p class="term-point"><span>Point</span>${escapeHtml(term.pointJa)}</p>
+          ${linkedCards.length ? `<details class="term-related"><summary>関連する問題（${linkedCards.length}）</summary><ul>${linkedCards.map((card) => `
+            <li><span>${escapeHtml(card.promptJa)}</span><button type="button" class="text-button" data-action="practice-card" data-card-id="${escapeAttribute(card.id)}">この問題を練習<span class="sr-only">: ${escapeHtml(card.promptJa)}</span></button></li>
+          `).join("")}</ul></details>` : ""}
+        </article>`;
+    }).join("");
+  }
+
   function handleClick(event: MouseEvent): void {
     const target = event.target instanceof Element ? event.target.closest<HTMLElement>("[data-action]") : null;
     if (!target) return;
 
     switch (target.dataset.action) {
+      case "collection": {
+        const nextCollection = target.dataset.collection;
+        if (nextCollection !== "tam" && nextCollection !== "toeic-daily") return;
+        if (collectionId === nextCollection) return;
+        switchCollection(nextCollection);
+        renderShell();
+        root.querySelector<HTMLElement>(`[data-collection="${nextCollection}"]`)?.focus({ preventScroll: true });
+        break;
+      }
+      case "practice-card": {
+        const card = cardsById.get(target.dataset.cardId ?? "");
+        if (!card) return;
+        switchCollection(card.collectionId);
+        drillFilters.pool = "all";
+        resetDeck();
+        deck.ids = [card.id, ...deck.ids.filter((id) => id !== card.id)];
+        deck.position = 0;
+        deck.currentId = card.id;
+        window.location.hash = "#/drill";
+        break;
+      }
       case "reveal":
         answerVisible = true;
         renderDrillPanel('[data-action="next"]');
@@ -319,6 +434,12 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
   function handleChange(event: Event): void {
     if (!(event.target instanceof HTMLSelectElement)) return;
     const { name, value } = event.target;
+
+    if (name === "glossary-tag") {
+      glossaryTag = value;
+      renderGlossaryResults();
+      return;
+    }
 
     if (name === "drill-pool") drillFilters.pool = value as DrillPool;
     if (name === "drill-theme") drillFilters.theme = value;
@@ -339,9 +460,15 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
   }
 
   function handleInput(event: Event): void {
-    if (!(event.target instanceof HTMLInputElement) || event.target.name !== "card-search") return;
-    listFilters.query = event.target.value;
-    renderListResults();
+    if (!(event.target instanceof HTMLInputElement)) return;
+    if (event.target.name === "card-search") {
+      listFilters.query = event.target.value;
+      renderListResults();
+    }
+    if (event.target.name === "glossary-search") {
+      glossaryQuery = event.target.value;
+      renderGlossaryResults();
+    }
   }
 
   function handleHashChange(): void {
@@ -355,13 +482,17 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
       return;
     }
 
-    if (!/^#\/(drill|list)$/.test(window.location.hash)) return;
+    if (!isValidHash(window.location.hash)) return;
     const nextRoute = routeFromHash(window.location.hash);
-    if (route === nextRoute) return;
+    if (route === nextRoute && nextRoute !== "glossary") return;
     route = nextRoute;
+    if (route === "glossary" && linkedTermId()) {
+      glossaryQuery = "";
+      glossaryTag = ALL;
+    }
     answerVisible = false;
     renderShell();
-    root.querySelector<HTMLElement>("#main-content")?.focus({ preventScroll: true });
+    if (!focusLinkedTerm()) root.querySelector<HTMLElement>("#main-content")?.focus({ preventScroll: true });
   }
 
   function handleKeyboardShortcut(event: KeyboardEvent): void {
@@ -394,8 +525,32 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
     if (countElement) countElement.textContent = String(results.length);
   }
 
+  function renderGlossaryResults(): void {
+    const resultsElement = root.querySelector<HTMLElement>("#glossary-results");
+    const countElement = root.querySelector<HTMLElement>("#glossary-count");
+    if (resultsElement) resultsElement.innerHTML = renderGlossaryResultsMarkup();
+    if (countElement) countElement.textContent = String(filteredTerms().length);
+  }
+
+  function focusLinkedTerm(): boolean {
+    const id = linkedTermId();
+    if (!id || !terms.some((term) => term.id === id)) return false;
+    const element = document.getElementById(`term-${id}`);
+    if (!element || !root.contains(element)) return false;
+    element.focus({ preventScroll: true });
+    element.scrollIntoView({ block: "start" });
+    return true;
+  }
+
+  function switchCollection(nextCollection: CollectionId): void {
+    collectionId = nextCollection;
+    drillFilters = { pool: nextCollection === "tam" ? "review" : "all", theme: ALL, difficulty: ALL };
+    listFilters = { query: "", status: "all", theme: ALL, difficulty: ALL, source: ALL };
+    resetDeck();
+  }
+
   function resetDeck(): void {
-    const matchingCards = filterCards(cards, {
+    const matchingCards = filterStudyCards(cards, collectionId, {
       status: drillFilters.pool,
       theme: drillFilters.theme === ALL ? undefined : drillFilters.theme,
       difficulty: difficultyFilter(drillFilters.difficulty),
@@ -422,8 +577,8 @@ export function mountApp(root: HTMLElement, cards: DrillCard[], generatedAt: str
     answerVisible = false;
   }
 
-  function filteredListCards(): DrillCard[] {
-    return filterCards(cards, {
+  function filteredListCards(): StudyCard[] {
+    return filterStudyCards(cards, collectionId, {
       query: listFilters.query,
       status: listFilters.status,
       theme: listFilters.theme === ALL ? undefined : listFilters.theme,
@@ -446,7 +601,16 @@ export function renderFatalError(root: HTMLElement, message: string): void {
 }
 
 function routeFromHash(hash: string): Route {
+  if (hash === "#/glossary" || hash.startsWith("#/glossary/")) return "glossary";
   return hash === "#/list" ? "list" : "drill";
+}
+
+function isValidHash(hash: string): boolean {
+  return /^#\/(drill|list|glossary)$/.test(hash) || /^#\/glossary\/[a-zA-Z0-9._-]+$/.test(hash);
+}
+
+function linkedTermId(): string | undefined {
+  return /^#\/glossary\/([a-zA-Z0-9._-]+)$/.exec(window.location.hash)?.[1];
 }
 
 function difficultyFilter(value: string): Difficulty | "all" {

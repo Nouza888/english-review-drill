@@ -5,6 +5,7 @@ const scopeUrl = new URL(self.registration.scope);
 const basePath = scopeUrl.pathname.endsWith("/") ? scopeUrl.pathname : `${scopeUrl.pathname}/`;
 const appShellUrl = new URL(basePath, self.location.origin).href;
 const dataUrl = new URL(`${basePath}data/cards.json`, self.location.origin).href;
+const libraryUrl = new URL(`${basePath}data/library.json`, self.location.origin).href;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(cacheAppShell());
@@ -35,7 +36,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (url.href === dataUrl) {
+  if (url.href === dataUrl || url.href === libraryUrl) {
     event.respondWith(networkFirst(request));
     return;
   }
@@ -48,6 +49,7 @@ async function cacheAppShell() {
   const coreUrls = [
     appShellUrl,
     dataUrl,
+    libraryUrl,
     new URL(`${basePath}manifest.webmanifest`, self.location.origin).href,
     new URL(`${basePath}icons/icon.svg`, self.location.origin).href,
     new URL(`${basePath}icons/icon-192.png`, self.location.origin).href,
