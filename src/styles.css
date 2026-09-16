@@ -43,6 +43,7 @@ body {
 
 button,
 input,
+textarea,
 select {
   color: inherit;
   font: inherit;
@@ -280,6 +281,8 @@ select {
 
 select:focus,
 input[type="search"]:focus,
+textarea:focus,
+input[type="checkbox"]:focus-visible,
 button:focus-visible,
 a:focus-visible,
 summary:focus-visible {
@@ -388,6 +391,81 @@ summary:focus-visible {
   height: 0.4rem;
   border-radius: 50%;
   background: var(--line);
+}
+
+.session-review-toggle {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.session-review-toggle.is-marked,
+.badge-session {
+  color: #174d75;
+  background: #e2f1ff;
+  border-color: #6b9bbf;
+}
+
+.session-review-toggle input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  accent-color: #174d75;
+}
+
+.draft-block {
+  margin-block: 1rem 1.25rem;
+}
+
+.draft-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.draft-heading label {
+  font-size: 0.85rem;
+  font-weight: 750;
+}
+
+.draft-heading label span {
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.draft-heading .text-button {
+  min-height: 44px;
+  flex-shrink: 0;
+}
+
+.draft-block textarea {
+  display: block;
+  width: 100%;
+  min-height: 7rem;
+  padding: 0.85rem;
+  border: 1px solid #c7c3ba;
+  border-radius: 0.7rem;
+  color: var(--ink);
+  background: white;
+  font-size: 16px;
+  line-height: 1.65;
+  resize: vertical;
+}
+
+.draft-block p,
+.session-help {
+  margin: 0.5rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  line-height: 1.6;
 }
 
 .answer-block {
@@ -978,9 +1056,13 @@ input[type="search"] {
   }
 
   .drill-filters {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5rem;
     padding: 0.75rem;
+  }
+
+  .drill-filters > label:first-child {
+    grid-column: 1 / -1;
   }
 
   .drill-filters select {

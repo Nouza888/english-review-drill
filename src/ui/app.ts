@@ -6,8 +6,8 @@ import {
 } from "../lib/library";
 
 type Route = "drill" | "list" | "glossary";
-type DrillPool = "review" | "mastered" | "all";
-type StatusFilter = "all" | "review" | "mastered" | "regular";
+type DrillPool = "review" | "mastered" | "all" | "session";
+type StatusFilter = "all" | "review" | "mastered" | "regular" | "session";
 
 interface DrillFilters {
   pool: DrillPool;
@@ -36,6 +36,9 @@ const UNSET = "__unset__";
 export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: string, terms: GlossaryTerm[]): void {
   const cardsById = new Map(cards.map((card) => [card.id, card]));
   const glossaryTags = uniqueSorted(terms.flatMap((term) => term.tags));
+  // This practice state lives only in this page instance; it never changes the source cards.
+  const sessionReviewIds = new Set<string>();
+  const answerDrafts = new Map<string, string>();
 
   let route = routeFromHash(window.location.hash);
   let collectionId: CollectionId = "tam";
@@ -115,6 +118,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
             <div><dt>全問題</dt><dd>${scoped.length}</dd></div>
             <div><dt>要復習</dt><dd>${reviewCount}</dd></div>
             <div><dt>定着済み</dt><dd>${masteredCount}</dd></div>
+            <div><dt>今回のチェック</dt><dd id="session-review-count">${scoped.filter((card) => sessionReviewIds.has(card.id)).length}</dd></div>
           </dl>`}
         </div>
         ${route === "drill" ? renderDrillRoute() : route === "list" ? renderListRoute() : renderGlossaryRoute()}
@@ -148,6 +152,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
             <select name="drill-pool">
               ${option("review", "⭐ 要復習", drillFilters.pool)}
               ${option("all", "全問題", drillFilters.pool)}
+              ${option("session", "今回のチェック", drillFilters.pool)}
               ${option("mastered", "✓ 定着済み", drillFilters.pool)}
             </select>
           </label>
@@ -168,6 +173,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
           </label>
         </div>
         <div id="drill-panel">${renderDrillPanelMarkup()}</div>
+        <p class="session-help">今回のチェックと入力文は、このタブでの練習用です。再読み込みすると消えます。</p>
         <p class="keyboard-help">キーボード: Spaceで解答表示、→で次の問題</p>
       </section>
     `;
@@ -180,8 +186,8 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
       return `
         <div class="empty-state" role="status">
           <span class="empty-icon" aria-hidden="true">○</span>
-          <h2>条件に合う問題がありません</h2>
-          <p>出題範囲またはフィルターを変更してください。</p>
+          <h2>${drillFilters.pool === "session" ? "今回チェックした問題がありません" : "条件に合う問題がありません"}</h2>
+          <p>${drillFilters.pool === "session" ? "「全問題」などで問題にチェックを付けるか、テーマ・難易度を変更してください。" : "出題範囲またはフィルターを変更してください。"}</p>
         </div>
       `;
     }
@@ -203,7 +209,20 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
           <p class="prompt-label">日本語</p>
           <h2 id="drill-prompt" tabindex="-1">${escapeHtml(currentCard.promptJa)}</h2>
         </div>
-        ${answerVisible ? renderAnswer(currentCard) : '<div class="thinking-space" aria-hidden="true"><span></span><span></span><span></span></div>'}
+        <label class="session-review-toggle${sessionReviewIds.has(currentCard.id) ? " is-marked" : ""}">
+          <input type="checkbox" name="session-review" data-card-id="${escapeAttribute(currentCard.id)}" ${sessionReviewIds.has(currentCard.id) ? "checked" : ""} />
+          <span>今回の要復習</span>
+        </label>
+        <div class="draft-block">
+          <div class="draft-heading">
+            <label for="answer-draft">自分の英作文 <span>（任意）</span></label>
+            <button class="text-button" type="button" data-action="clear-draft">入力をクリア</button>
+          </div>
+          <textarea id="answer-draft" name="answer-draft" data-card-id="${escapeAttribute(currentCard.id)}" rows="3" lang="en" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-describedby="draft-help" placeholder="答えを見る前に、ここに書いてみる">
+${escapeHtml(answerDrafts.get(currentCard.id) ?? "")}</textarea>
+          <p id="draft-help">答えを表示して、自分の英文と見比べられます。</p>
+        </div>
+        ${answerVisible ? renderAnswer(currentCard) : ""}
         <div class="card-actions">
           ${
             answerVisible
@@ -253,6 +272,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
             <select name="list-status">
               ${option("all", "すべて", listFilters.status)}
               ${option("review", "⭐ 要復習", listFilters.status)}
+              ${option("session", "今回のチェック", listFilters.status)}
               ${option("mastered", "✓ 定着済み", listFilters.status)}
               ${option("regular", "通常", listFilters.status)}
             </select>
@@ -308,6 +328,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
               <span class="list-prompt">${escapeHtml(card.promptJa)}</span>
               <span class="badge-row">
                 ${statusBadge(card.reviewStatus)}
+                ${sessionReviewIds.has(card.id) ? '<span class="badge badge-session">✓ 今回</span>' : ""}
                 ${card.difficulty ? `<span class="badge badge-neutral">${escapeHtml(card.difficulty)}</span>` : ""}
               </span>
               <span class="summary-chevron" aria-hidden="true"></span>
@@ -428,10 +449,29 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
         showNextCard();
         renderDrillPanel("#drill-prompt");
         break;
+      case "clear-draft": {
+        if (deck.currentId) answerDrafts.delete(deck.currentId);
+        const input = root.querySelector<HTMLTextAreaElement>("#answer-draft");
+        if (input) {
+          input.value = "";
+          input.focus({ preventScroll: true });
+        }
+        break;
+      }
     }
   }
 
   function handleChange(event: Event): void {
+    if (event.target instanceof HTMLInputElement && event.target.name === "session-review") {
+      const { cardId } = event.target.dataset;
+      if (!cardId || !cardsById.has(cardId)) return;
+      if (event.target.checked) sessionReviewIds.add(cardId);
+      else sessionReviewIds.delete(cardId);
+      event.target.closest(".session-review-toggle")?.classList.toggle("is-marked", event.target.checked);
+      const count = root.querySelector("#session-review-count");
+      if (count) count.textContent = String(collectionCards().filter((card) => sessionReviewIds.has(card.id)).length);
+      return;
+    }
     if (!(event.target instanceof HTMLSelectElement)) return;
     const { name, value } = event.target;
 
@@ -460,6 +500,14 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
   }
 
   function handleInput(event: Event): void {
+    if (event.target instanceof HTMLTextAreaElement && event.target.name === "answer-draft") {
+      const { cardId } = event.target.dataset;
+      if (cardId && cardsById.has(cardId)) {
+        if (event.target.value) answerDrafts.set(cardId, event.target.value);
+        else answerDrafts.delete(cardId);
+      }
+      return;
+    }
     if (!(event.target instanceof HTMLInputElement)) return;
     if (event.target.name === "card-search") {
       listFilters.query = event.target.value;
@@ -496,7 +544,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
   }
 
   function handleKeyboardShortcut(event: KeyboardEvent): void {
-    if (route !== "drill" || event.metaKey || event.ctrlKey || event.altKey) return;
+    if (route !== "drill" || event.isComposing || event.metaKey || event.ctrlKey || event.altKey) return;
     if (isInteractiveTarget(event.target)) return;
 
     if (event.key === " " && !answerVisible && deck.currentId) {
@@ -549,12 +597,16 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
     resetDeck();
   }
 
-  function resetDeck(): void {
-    const matchingCards = filterStudyCards(cards, collectionId, {
-      status: drillFilters.pool,
+  function filteredDrillCards(): StudyCard[] {
+    return filterStudyCards(cards, collectionId, {
+      status: drillFilters.pool === "session" ? "all" : drillFilters.pool,
       theme: drillFilters.theme === ALL ? undefined : drillFilters.theme,
       difficulty: difficultyFilter(drillFilters.difficulty),
-    });
+    }).filter((card) => drillFilters.pool !== "session" || sessionReviewIds.has(card.id));
+  }
+
+  function resetDeck(): void {
+    const matchingCards = filteredDrillCards();
     const ids = createShuffledQueue(matchingCards.map((card) => card.id));
     deck = { ids, position: 0, cycle: 1, currentId: ids[0] ?? null };
     answerVisible = false;
@@ -563,6 +615,20 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
   function showNextCard(): void {
     if (deck.ids.length === 0) return;
     const previousId = deck.currentId;
+
+    if (drillFilters.pool === "session") {
+      const eligible = new Set(filteredDrillCards().map((card) => card.id));
+      const visited = deck.ids.slice(0, deck.position + 1).filter((id) => eligible.has(id));
+      const remaining = deck.ids.slice(deck.position + 1).filter((id) => eligible.has(id));
+      // Keep the current answer visible when a mark is removed; skip it on subsequent rounds.
+      deck.ids = [...visited, ...remaining];
+      deck.position = visited.length - 1;
+      if (deck.ids.length === 0) {
+        deck.currentId = null;
+        answerVisible = false;
+        return;
+      }
+    }
 
     if (deck.position + 1 < deck.ids.length) {
       deck.position += 1;
@@ -580,11 +646,11 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
   function filteredListCards(): StudyCard[] {
     return filterStudyCards(cards, collectionId, {
       query: listFilters.query,
-      status: listFilters.status,
+      status: listFilters.status === "session" ? "all" : listFilters.status,
       theme: listFilters.theme === ALL ? undefined : listFilters.theme,
       difficulty: difficultyFilter(listFilters.difficulty),
       source: listFilters.source === ALL ? undefined : listFilters.source,
-    });
+    }).filter((card) => listFilters.status !== "session" || sessionReviewIds.has(card.id));
   }
 }
 
