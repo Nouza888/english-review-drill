@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T02:10:06.614Z",
+  "generatedAt": "2026-09-25T09:01:27.202Z",
   "cards": [
     {
       "id": "TE-0001",
@@ -205,7 +205,7 @@
         "present + 内容 + to + 相手 + as + どういうものとして伝えるか"
       ],
       "points": [
-        "The last thing we want is to ...＝最も避けたいのは〜すること。credible は信頼できそうなことで、confirmed と同じではありません。不安という感情を表す concern は、ここでは冠詞を付けません。"
+        "The last thing we want is to ...＝最も避けたいのは〜すること。credible は信頼できそうなことで、confirmed と同じではありません。不安という感情を表す concern は、ここでは冠詞を付けません。a concern は個別の懸念事項を数える場合に使います。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -226,7 +226,7 @@
         "separate A from B"
       ],
       "points": [
-        "distinguish A from B はAとBを区別する、という別の言い方です。hypotheses は検証対象となる仮説、assumptions は確認せずに置いている前提です。要点は、Engineeringの回答待ちでも based only on the facts confirmed so far（現時点の確認済み事実だけに基づいて）共有内容を整理できることです。"
+        "distinguish A from B はAとBを区別する、という別の言い方です。hypotheses は検証対象となる仮説、assumptions は確認せずに置いている前提です。要点は、Engineeringの回答待ちでも based only on the facts confirmed so far（現時点の確認済み事実だけに基づいて）共有内容を整理できることです。hypothesis が単数、hypotheses が複数です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -247,7 +247,7 @@
         "interpret A as B"
       ],
       "points": [
-        "lack of objections／absence of objections＝反対意見がないこと。be on the same page は認識が一致していることです。反対が聞こえないだけでは、一致したと判断できない場面で使います。"
+        "lack of objections／absence of objections＝反対意見がないこと。be on the same page は認識が一致していることです。反対が聞こえないだけでは、一致したと判断できない場面で使います。同意を表す agreement は冠詞なし。an agreement は一つの取り決め・合意文書などを指します。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -310,7 +310,7 @@
         "declare + 対象 + 状態"
       ],
       "points": [
-        "consider the incident resolved は解決済みと判断すること、declare the incident resolved は解決を宣言することです。どちらも目的語と補語を取りますが、行為は異なります。mitigate the impact は影響の軽減であり、解決そのものではありません。"
+        "consider the incident resolved は解決済みと判断すること、declare the incident resolved は解決を宣言することです。どちらも目的語と補語を取りますが、行為は異なります。mitigate the impact は影響の軽減であり、解決そのものではありません。顧客へ伝えるなら tell the customer that the incident is resolved。declare the customer that ... の形にはしません。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -352,7 +352,7 @@
         "be cleared for + 名詞・動詞ing"
       ],
       "points": [
-        "「共有してよいか」という許可の確認です。「必要な人に共有済みか」という周知の確認は26に分けています。"
+        "「共有してよいか」という許可の確認です。「必要な人に共有済みか」という周知の確認は26に分けています。have approval to share ...（共有する許可がある）も自然です。許可という意味の approval は通常、冠詞を付けません。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -394,7 +394,7 @@
         "ask + 人 + to + 動詞"
       ],
       "points": [
-        "take action＝対応する。依頼する行動をはっきりさせるため、を ask ... to ... で再構成しています。要点は、技術的に正しい回答でも、お客様が次に何をするか分からなければ十分ではないことです。情報そのものを求める ask ... for ... は07で扱います。"
+        "take action＝対応する。依頼する行動をはっきりさせるため、を ask ... to ... で再構成しています。要点は、技術的に正しい回答でも、お客様が次に何をするか分からなければ十分ではないことです。情報そのものを求める ask ... for ... は07で扱います。the actions we need to ask the customer to take のように、顧客に何をしてもらうかを表す to take まで含めます。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -436,7 +436,7 @@
         "commit to + 名詞・動詞ing／be likely to + 動詞"
       ],
       "points": [
-        "commit to a time＝時刻を確約する。by then＝その時刻までに。likely は見込みを表し、確定を意味しません。"
+        "commit to a time＝時刻を確約する。by then＝その時刻までに。likely は見込みを表し、確定を意味しません。promise 人 内容 と promise 内容 to 人 は両方正しい形です。動詞の型と文脈が許せば、短い部分を先に、長い説明を後ろに置くと追いやすくなります。更新時刻を設定する文脈では a time for the next update が自然です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -541,7 +541,7 @@
         "make sure + 文／be reflected in + 反映先"
       ],
       "points": [
-        "everyone affected は影響を受ける人全員です。知らせる側から言うなら inform + 人 + of + 内容。変更前の周知確認と、担当・期限変更の反映を組み合わせています。共有の許可を確認する17とは別の行為です。"
+        "everyone affected は影響を受ける人全員です。知らせる側から言うなら inform + 人 + of + 内容。変更前の周知確認と、担当・期限変更の反映を組み合わせています。共有の許可を確認する17とは別の行為です。make sure everyone is informed のように節の動詞は is を使います。反映先の前置詞は in です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -625,7 +625,7 @@
         "not only A but also B／using the same criteria"
       ],
       "points": [
-        "AとBはどちらも名詞句です。評価項目には the time required to roll it back や the impact on the customer's operations も使えます。come at a cost はコストを伴うこと。延期にもコストがある、という観点を含めて比較します。"
+        "AとBはどちらも名詞句です。評価項目には the time required to roll it back や the impact on the customer's operations も使えます。come at a cost はコストを伴うこと。延期にもコストがある、という観点を含めて比較します。criterion が単数、criteria が複数です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -646,7 +646,7 @@
         "agree on + 合意する内容／in case + 備える事態"
       ],
       "points": [
-        "in case は、その事態に備えて今準備する意味です。単なる条件の if とは働きが違います。再エスカレーションも、agree in advance on when to re-escalate として計画に含められます。復旧後の兆候には the same indicators reappear after recovery が使えます。"
+        "in case は、その事態に備えて今準備する意味です。単なる条件の if とは働きが違います。再エスカレーションも、agree in advance on when to re-escalate として計画に含められます。復旧後の兆候には the same indicators reappear after recovery が使えます。decide on a contingency plan も自然です。if it fails は失敗した場合の条件、in case it fails は失敗に備える意味です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -688,7 +688,7 @@
         "focus on A rather than B"
       ],
       "points": [
-        "reason for ...＝〜の理由。support needed to ... は、〜するために必要な支援です。"
+        "reason for ...＝〜の理由。support needed to ... は、〜するために必要な支援です。reason for the delay に対し、原因を表す cause は the cause of the delay とします。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -709,7 +709,7 @@
         "I noticed that ...／Do you mind if I ask why ...?"
       ],
       "points": [
-        "leave out＝省く、入れない。まず観察した事実を述べ、その理由を尋ねる形です。省いた相手を主語にしない言い方にもできます。"
+        "leave out＝省く、入れない。まず観察した事実を述べ、その理由を尋ねる形です。省いた相手を主語にしない言い方にもできます。今回の単数形は a deadline。文脈から理由が明らかなら Do you mind if I ask why? と省略しても自然です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -751,7 +751,7 @@
         "take the lead on + 対象業務／assign A to B"
       ],
       "points": [
-        "outstanding items＝未処理・未解決の事項。allocate A to B も割り振りに使えます。until は、次回更新までその役割を継続する意味です。lead to ...（〜につながる）とは別の形です。"
+        "outstanding items＝未処理・未解決の事項。allocate A to B も割り振りに使えます。until は、次回更新までその役割を継続する意味です。lead to ...（〜につながる）とは別の形です。by the next update なら次回更新までに割当てを完了する期限です。not ... until は「それまではしない」で、直後の実行までは約束しません。outstanding performance は「素晴らしい出来」。outstanding items は単に「まだ残っている事項」です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -793,7 +793,7 @@
         "make time for + 名詞／make time to + 動詞"
       ],
       "points": [
-        "back-to-back meetings＝会議が続くこと、things have settled down＝状況が落ち着いたこと。be tied up は手が離せないことです。have some time は時間に余裕があること、make time は時間を確保すること。this afternoon は時を表す語句で、そのまま添えられます。earlier than usual は普段より早く、という比較に使えます。"
+        "back-to-back meetings＝会議が続くこと、things have settled down＝状況が落ち着いたこと。be tied up は手が離せないことです。have some time は時間に余裕があること、make time は時間を確保すること。this afternoon は時を表す語句で、そのまま添えられます。earlier than usual は普段より早く、という比較に使えます。複数形の back-to-back meetings に a は付けません。「今日の午前中」は this morning です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -814,7 +814,7 @@
         "動詞ingを主語にする／feel better than ..."
       ],
       "points": [
-        "help clear my head＝頭をすっきりさせる。状態には feel refreshed、行動には go to bed early なども使えます。better than usual（普段より）と better than I expected（予想より）は比較相手が違います。元の6文にある体調・気分転換の表現を、この項目に集めています。"
+        "help clear my head＝頭をすっきりさせる。状態には feel refreshed、行動には go to bed early なども使えます。better than usual（普段より）と better than I expected（予想より）は比較相手が違います。元の6文にある体調・気分転換の表現を、この項目に集めています。make 人 feel refreshed は「人をすっきりした気分にする」。make の後ろの feel は原形です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -835,7 +835,7 @@
         "for the first time in a while／take it easy"
       ],
       "points": [
-        "久しぶりの活動を述べると、休息の予定を述べる・を、一つの例文に再構成しています。don't have any plans は予定がないこと。take it easy の it を落とさず、まとまりで覚えます。"
+        "久しぶりの活動を述べると、休息の予定を述べる・を、一つの例文に再構成しています。don't have any plans は予定がないこと。take it easy の it を落とさず、まとまりで覚えます。for the first time in a while＝久しぶりに。ここでは a first time ではなく the first time を使います。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
