@@ -1,1781 +1,22 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T07:17:43.732Z",
+  "generatedAt": "2026-09-25T02:10:06.614Z",
   "cards": [
     {
-      "id": "ED-0001",
-      "addedAt": "2026-07-07",
+      "id": "TE-0001",
+      "addedAt": "2026-09-25",
       "source": [
-        "日本語→英語瞬発ドリル"
+        "既存40選（01〜40）"
       ],
-      "difficulty": "Easy",
-      "theme": "障害対応",
-      "promptJa": "まず、現在のお客様への影響を確認させてください。",
-      "answerEn": "First, let me confirm the current impact on the customer.",
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "まず、現在のお客様への影響、SRの担当者、次のアクションを確認させてください。",
+      "answerEn": "First, let me confirm the current customer impact, the SR owner, and the next action.",
       "phrases": [
-        "let me confirm ..."
+        "Let me confirm + 確認する内容"
       ],
       "points": [
-        "let me confirm ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0002",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "ビジネス会議",
-      "promptJa": "音声が少し途切れたので、最後の部分をもう一度言っていただけますか。",
-      "answerEn": "Your audio broke up a little. Could you say the last part again, please?",
-      "phrases": [
-        "audio broke up"
-      ],
-      "points": [
-        "audio broke upを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0003",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "週末は久しぶりに友人とサッカーをしました。",
-      "answerEn": "I played football with some friends last weekend for the first time in a while.",
-      "phrases": [
-        "for the first time in a while"
-      ],
-      "points": [
-        "for the first time in a whileを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0004",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "TAM / SR",
-      "promptJa": "このSRの現在の担当者と、次のアクションを確認させてください。",
-      "answerEn": "Let me confirm who currently owns this SR and what the next action is.",
-      "phrases": [
-        "let me confirm ..."
-      ],
-      "points": [
-        "let me confirm ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0005",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "OCI / ADB",
-      "promptJa": "ADBの性能低下がいつ始まり、その直前に何か変更があったか分かりますか。",
-      "answerEn": "Do you know when the ADB slowdown started and whether anything changed shortly before that?",
-      "phrases": [
-        "Do you know when ... and whether ...?"
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0006",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "障害対応",
-      "promptJa": "ここまでの理解では、根本原因はまだ確認されておらず、調査が続いています。",
-      "answerEn": "My understanding so far is that the root cause has not been confirmed yet and the investigation is still ongoing.",
-      "phrases": [
-        "My understanding so far is that ..."
-      ],
-      "points": [
-        "My understanding so far is that ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0007",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "OCI / TAM",
-      "promptJa": "明日のDR切り替えに備えて、営業時間外のエスカレーション経路と待機担当者を確認しておきたいです。",
-      "answerEn": "To prepare for tomorrow's DR switchover, I'd like to confirm the escalation path outside business hours and who will be on standby.",
-      "phrases": [
-        "To prepare for ..."
-      ],
-      "points": [
-        "To prepare for ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0008",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害対応・安全な説明",
-      "promptJa": "Engineeringが確認するまでは、お客様に復旧見込み時刻を案内しない方が安全だと思います。",
-      "answerEn": "I think it would be safer not to give the customer an estimated recovery time until Engineering confirms it.",
-      "phrases": [
-        "It would be safer not to ... until ..."
-      ],
-      "points": [
-        "It would be safer not to ... until ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0009",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "ビジネス会議・ファシリテーション",
-      "promptJa": "残り10分なので、会議を終える前に、次のアクション、担当者、目標時刻をそろえましょう。",
-      "answerEn": "We have only 10 minutes left, so before we wrap up, let's align on the next actions, owners, and target completion times.",
-      "phrases": [
-        "Before we wrap up, let's ..."
-      ],
-      "points": [
-        "Before we wrap up, let's ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0010",
-      "addedAt": "2026-07-07",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・顧客視点",
-      "promptJa": "技術的には回避策が使えても、お客様の運用上は受け入れられない可能性があるため、別の選択肢も検討できますか。",
-      "answerEn": "Even if the workaround is technically feasible, it may not be operationally acceptable to the customer. So, could we explore other options as well?",
-      "phrases": [
-        "operationally acceptable to ..."
-      ],
-      "points": [
-        "Even if ...で譲歩条件を示し、主節の判断と分ける。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0011",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今朝は少し眠かったですが、コーヒーを飲んだら元気になりました。",
-      "answerEn": "I was a little sleepy this morning, but I felt better after I had some coffee.",
-      "phrases": [
-        "feel better after ..."
-      ],
-      "points": [
-        "feel better after ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0012",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "障害対応",
-      "promptJa": "現時点では、お客様から新たな影響の報告はありません。",
-      "answerEn": "So far, we haven't received any reports of additional impact from the customer.",
-      "phrases": [
-        "So far, we haven't received any reports of ..."
-      ],
-      "points": [
-        "So far, we haven't received any reports of ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0013",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "ビジネス会議",
-      "promptJa": "その用語の意味が分からないので、簡単に説明していただけますか。",
-      "answerEn": "I'm not sure what that term means. Could you explain it briefly?",
-      "phrases": [
-        "I'm not sure what ... means."
-      ],
-      "points": [
-        "I'm not sure what ... means.を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0014",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "TAM・進捗確認",
-      "promptJa": "次回の更新をいつ共有できるか、確認していただけますか。",
-      "answerEn": "Could you confirm when you can share the next update with us?",
-      "phrases": [
-        "Could you confirm when ...?"
-      ],
-      "points": [
-        "Could you confirm when ...?を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0015",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "OCI・切り分け",
-      "promptJa": "このタイムアウト事象が、ネットワーク変更の前と後のどちらで始まったか分かりますか。",
-      "answerEn": "Do you know whether this timeout issue started before or after the network change?",
-      "phrases": [
-        "whether ... before or after ..."
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0016",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "障害対応・安全な説明",
-      "promptJa": "ログの急増は障害と同じ時間帯に発生しましたが、因果関係はまだ確認できていません。",
-      "answerEn": "The spike in log volume occurred around the same time as the incident, but we haven't confirmed whether the two are related.",
-      "phrases": [
-        "occur around the same time as ..."
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0017",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "変更作業・事前確認",
-      "promptJa": "切り替えを開始する前に、ロールバック条件と最終的な意思決定者を明確にしておきましょう。",
-      "answerEn": "Before we start the switchover, let's clarify the rollback criteria and who will make the final decision.",
-      "phrases": [
-        "rollback criteria"
-      ],
-      "points": [
-        "rollback criteriaを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0018",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・顧客承認",
-      "promptJa": "回避策が有効でも、変更に伴うリスクを説明し、お客様の承認を得る必要があります。",
-      "answerEn": "Even if the workaround is effective, we still need to explain the risks of the change to the customer and get their approval.",
-      "phrases": [
-        "get the customer's approval"
-      ],
-      "points": [
-        "Even if ...で譲歩条件を示し、主節の判断と分ける。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0019",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "会議・論点整理",
-      "promptJa": "意見が分かれているので、確認済みの事実と仮説を分けてから、次の対応を決めましょう。",
-      "answerEn": "Since we have different views, let's separate the confirmed facts from the assumptions before deciding on the next steps.",
-      "phrases": [
-        "separate confirmed facts from assumptions"
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0020",
-      "addedAt": "2026-07-08",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・優先度の再検討",
-      "promptJa": "Engineeringの見解は理解しましたが、お客様への影響を踏まえると、優先度を再検討していただけないでしょうか。",
-      "answerEn": "I understand Engineering's position, but given the customer impact, could we reconsider the priority?",
-      "phrases": [
-        "given the customer impact"
-      ],
-      "points": [
-        "given the customer impactを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0021",
-      "addedAt": "2026-07-09",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "スケジュール調整",
-      "promptJa": "今日は少し立て込んでいますが、午後なら時間を取れます。",
-      "answerEn": "I am a bit tied up today, but I can make time this afternoon.",
-      "phrases": [
-        "make time this afternoon"
-      ],
-      "points": [
-        "make time this afternoonを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0022",
-      "addedAt": "2026-07-09",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "会議・認識合わせ",
-      "promptJa": "認識にずれがないよう、決定事項を一度整理させてください。",
-      "answerEn": "To make sure we are aligned, let me summarize what we have agreed on.",
-      "phrases": [
-        "make sure we're aligned"
-      ],
-      "points": [
-        "make sure we're alignedを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0023",
-      "addedAt": "2026-07-09",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "TAM・問題の再現確認",
-      "promptJa": "この問題が再現可能か確認するため、発生時の正確な手順を共有していただけますか。",
-      "answerEn": "To determine whether this issue can be reproduced, could you share the exact steps that led to it?",
-      "phrases": [
-        "determine whether ... can be reproduced"
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0024",
-      "addedAt": "2026-07-09",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "期限・期待値調整",
-      "promptJa": "その期限が難しい場合は、何がボトルネックなのかを明確にし、現実的な日程を提案してください。",
-      "answerEn": "If that deadline isn't feasible, could you clarify what the bottleneck is and propose a realistic timeline?",
-      "phrases": [
-        "clarify what the bottleneck is"
-      ],
-      "points": [
-        "clarify what the bottleneck isを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0025",
-      "addedAt": "2026-07-09",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "会議・異論の確認",
-      "promptJa": "全員の認識が一致しているとは限らないので、異論があれば今のうちに共有してください。",
-      "answerEn": "We may not all be on the same page, so if anyone has a different view, please share it now.",
-      "phrases": [
-        "be on the same page"
-      ],
-      "points": [
-        "be on the same pageを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0026",
-      "addedAt": "2026-07-10",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "ビジネス・近況",
-      "promptJa": "今日は午前中に会議が続いていましたが、ようやく少し落ち着きました。",
-      "answerEn": "I had back-to-back meetings this morning, but I finally have some time now.",
-      "phrases": [
-        "back-to-back meetings"
-      ],
-      "points": [
-        "back-to-back meetingsを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0027",
-      "addedAt": "2026-07-10",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "会議・優先順位",
-      "promptJa": "時間が限られているので、今日は最も重要な論点に集中しましょう。",
-      "answerEn": "Since we have limited time, let's focus on the most important issue.",
-      "phrases": [
-        "Since we have limited time, let's ..."
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0028",
-      "addedAt": "2026-07-10",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "TAM・情報開示の確認",
-      "promptJa": "お客様へ回答する前に、この情報を共有してよいか確認していただけますか。",
-      "answerEn": "Before responding to the customer, could you confirm whether this information has been cleared for sharing with them?",
-      "phrases": [
-        "be cleared for sharing"
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0029",
-      "addedAt": "2026-07-11",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "会議・懸念の提示",
-      "promptJa": "提案の方向性には賛成ですが、実行に必要なリソースとリスクがまだ明確ではありません。",
-      "answerEn": "I agree with the overall direction of the proposal, but I'm not sure what resources will be required or what risks will be involved in implementing it.",
-      "phrases": [
-        "what resources will be required"
-      ],
-      "points": [
-        "what resources will be requiredを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0030",
-      "addedAt": "2026-07-11",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "会議・次のアクション",
-      "promptJa": "この場で結論を出せない場合は、誰が何をいつまでに確認するか決めて終わりましょう。",
-      "answerEn": "If we can't reach a decision today, let's wrap up by agreeing on who will confirm what and by when.",
-      "phrases": [
-        "who will confirm what and by when"
-      ],
-      "points": [
-        "who will confirm what and by whenを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0031",
-      "addedAt": "2026-07-13",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "週末はゆっくりできたので、今日はすっきりした気分です。",
-      "answerEn": "I was able to relax over the weekend, so I feel refreshed today.",
-      "phrases": [
-        "relax over the weekend"
-      ],
-      "points": [
-        "relax over the weekendを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0032",
-      "addedAt": "2026-07-13",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "障害対応",
-      "promptJa": "お客様に提案する前に、この回避策がどのような条件で有効なのか確認したいです。",
-      "answerEn": "Before proposing this workaround to the customer, I'd like to confirm under what conditions it would be effective.",
-      "phrases": [
-        "under what conditions ... would be effective"
-      ],
-      "points": [
-        "under what conditions ... would be effectiveを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0033",
-      "addedAt": "2026-07-13",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "ビジネス会議",
-      "promptJa": "この案に反対というわけではありませんが、決定する前にリスクをもう少し理解したいです。",
-      "answerEn": "I'm not opposed to this proposal, but I'd like to understand the risks a little better before we make a decision.",
-      "phrases": [
-        "I'm not opposed to ..., but ..."
-      ],
-      "points": [
-        "I'm not opposed to ..., but ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0034",
-      "addedAt": "2026-07-13",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・障害対応",
-      "promptJa": "根本原因が確認できていない以上、この変更で解決するとお客様に断言するのは避けるべきです。",
-      "answerEn": "Since the root cause hasn't been confirmed, we should avoid assuring the customer that this change will resolve the issue.",
-      "phrases": [
-        "avoid assuring the customer that ..."
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0035",
-      "addedAt": "2026-07-14",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "ビジネス会議",
-      "promptJa": "スケジュールを変更する前に、この遅れが一時的なものか、構造的な問題によるものかを見極める必要があります。",
-      "answerEn": "Before revising the schedule, we need to determine whether this delay is temporary or caused by a structural issue.",
-      "phrases": [
-        "determine whether A or B"
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0036",
-      "addedAt": "2026-07-14",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "昨夜はあまり眠れませんでしたが、思ったより元気です。",
-      "answerEn": "I didn't sleep well last night, but I feel better than I expected.",
-      "phrases": [
-        "better than I expected"
-      ],
-      "points": [
-        "better than I expectedを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0037",
-      "addedAt": "2026-07-14",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "ビジネス会議",
-      "promptJa": "議論を続ける前に、今日この会議で何を決める必要があるのか明確にしましょう。",
-      "answerEn": "Before we continue the discussion, let's clarify what we need to decide in today's meeting.",
-      "phrases": [
-        "clarify what we need to decide"
-      ],
-      "points": [
-        "clarify what we need to decideを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0038",
-      "addedAt": "2026-07-14",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "OCI・障害対応",
-      "promptJa": "この事象が特定のリージョンに限られているのか、それとも複数のリージョンに影響しているのか確認できますか。",
-      "answerEn": "Could you confirm whether this issue is limited to a specific region or affects multiple regions?",
-      "phrases": [
-        "be limited to ..."
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0039",
-      "addedAt": "2026-07-14",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害分析",
-      "promptJa": "ログ量の急増は障害発生と同じタイミングでしたが、それだけで因果関係があるとは判断できません。",
-      "answerEn": "Although the spike in log volume occurred around the same time as the incident, that alone doesn't establish a causal relationship between the two.",
-      "phrases": [
-        "That alone does not establish ..."
-      ],
-      "points": [
-        "Although ...にはbutを重ねず、主節へつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0040",
-      "addedAt": "2026-07-16",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "ビジネス会議",
-      "promptJa": "反対意見が出なかったことを、全員が同意したという意味に受け取らないようにしましょう。",
-      "answerEn": "Let's not interpret the lack of objections as agreement from everyone.",
-      "phrases": [
-        "interpret A as B"
-      ],
-      "points": [
-        "interpret A as Bを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0041",
-      "addedAt": "2026-07-16",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今日はいつもより早く仕事を始めたので、午後は少し余裕がありそうです。",
-      "answerEn": "Since I started work earlier today than usual, I should have some time this afternoon.",
-      "phrases": [
-        "earlier than usual"
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0042",
-      "addedAt": "2026-07-16",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "TAM・状況更新",
-      "promptJa": "次回の更新には、調査状況だけでなく、お客様にお願いする対応も含めてください。",
-      "answerEn": "Please include not only the current status of the investigation, but also any actions the customer needs to take in the next update.",
-      "phrases": [
-        "not only A but also B"
-      ],
-      "points": [
-        "not only A but also BではAとBを同じ文法形で並べる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0043",
-      "addedAt": "2026-07-16",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "ビジネス会議・報告",
-      "promptJa": "この数字が暫定値なのか、それともすでに確認済みなのか教えていただけますか。",
-      "answerEn": "Could you clarify whether this figure is preliminary or has already been validated?",
-      "phrases": [
-        "preliminary or already validated"
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0044",
-      "addedAt": "2026-07-16",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害対応",
-      "promptJa": "回避策によって影響は軽減しましたが、再発しないことを確認できるまでは、障害を解決済みとは扱えません。",
-      "answerEn": "Although the workaround has mitigated the impact, we can't consider the incident resolved until we confirm that it won't recur.",
-      "phrases": [
-        "consider the incident resolved"
-      ],
-      "points": [
-        "Although ...にはbutを重ねず、主節へつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0045",
-      "addedAt": "2026-07-16",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・顧客対応",
-      "promptJa": "技術的に正しい回答でも、お客様が次に何をすべきか分からなければ、十分な回答とは言えません。",
-      "answerEn": "Even if the response is technically accurate, it is not sufficient unless the customer knows what to do next.",
-      "phrases": [
-        "It isn't sufficient unless ..."
-      ],
-      "points": [
-        "Even if ...で譲歩条件を示し、主節の判断と分ける。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0046",
-      "addedAt": "2026-07-17",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今朝は少し慌ただしかったですが、今は落ち着いています。",
-      "answerEn": "I was a little busy this morning, but things have settled down now.",
-      "phrases": [
-        "things have settled down"
-      ],
-      "points": [
-        "things have settled downを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0047",
-      "addedAt": "2026-07-17",
-      "source": [
-        "日本語→英語瞬発ドリル",
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "ビジネス会議・変更管理",
-      "promptJa": "この変更を進める前に、影響を受ける担当者全員に共有されているか確認しましょう。",
-      "answerEn": "Before proceeding with this change, let's make sure everyone affected has been informed.",
-      "phrases": [
-        "everyone affected has been informed"
-      ],
-      "points": [
-        "everyone affected has been informedを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": "2026-07-19",
-      "attempts": 2,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0048",
-      "addedAt": "2026-07-17",
-      "source": [
-        "日本語→英語瞬発ドリル",
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "会議・問題解決",
-      "promptJa": "遅れている理由ではなく、タスクの完了に必要な支援に焦点を当てましょう。",
-      "answerEn": "Let's focus on the support we need to complete the task rather than the reason for the delay.",
-      "phrases": [
-        "focus on B rather than A"
-      ],
-      "points": [
-        "focus on B rather than Aを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": "2026-07-19",
-      "attempts": 1,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0049",
-      "addedAt": "2026-07-17",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・変更判断",
-      "promptJa": "この変更が技術的に可能だからといって、本番環境で実施すべきとは限りません。",
-      "answerEn": "Even if this change is technically feasible, that alone doesn't mean it should be implemented in production.",
-      "phrases": [
-        "Just because A doesn't mean B"
-      ],
-      "points": [
-        "Even if ...で譲歩条件を示し、主節の判断と分ける。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0050",
-      "addedAt": "2026-07-17",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・顧客説明",
-      "promptJa": "Engineeringの見解は有力ですが、確認済みの事実としてお客様に伝えるべきではありません。",
-      "answerEn": "Engineering's assessment appears credible, but we shouldn't present it to the customer as a confirmed fact.",
-      "phrases": [
-        "present A as B"
-      ],
-      "points": [
-        "present X as Yは、仮説と確認済み事実を区別して伝える場面で使える。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": "2026-07-25",
-      "attempts": 1,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0051",
-      "addedAt": "2026-07-19",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今日は天気が良かったので、仕事を始める前に少し散歩しました。",
-      "answerEn": "Since it was sunny today, I went for a short walk before starting work.",
-      "phrases": [
-        "go for a short walk"
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0052",
-      "addedAt": "2026-07-19",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "障害調査",
-      "promptJa": "現時点で事象を再現できなくても、発生時の条件は記録しておく必要があります。",
-      "answerEn": "Even if we can't reproduce the issue at this point, we still need to document the conditions under which it occurred.",
-      "phrases": [
-        "Even if ..., we still need to ... / the conditions under which ..."
-      ],
-      "points": [
-        "Even if ...で譲歩条件を示し、主節の判断と分ける。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": "2026-07-26",
-      "attempts": 1,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0053",
-      "addedAt": "2026-07-19",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害対応・顧客説明",
-      "promptJa": "回避策で影響が軽減していても、監視結果が安定するまでは復旧を宣言すべきではありません。",
-      "answerEn": "Even if the workaround has mitigated the impact, we shouldn't declare the incident resolved until monitoring confirms that the service is stable.",
-      "phrases": [
-        "until monitoring confirms that ..."
-      ],
-      "points": [
-        "Even if ...で譲歩条件を示し、主節の判断と分ける。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0054",
-      "addedAt": "2026-07-19",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "ビジネス会議・意思決定",
-      "promptJa": "今すぐ決めないことにもコストがあるので、延期した場合の影響も比較しましょう。",
-      "answerEn": "Delaying the decision also comes at a cost, so let's weigh the impact of postponing it.",
-      "phrases": [
-        "come at a cost",
-        "weigh the impact of ..."
-      ],
-      "points": [
-        "come at a costを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0055",
-      "addedAt": "2026-07-22",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "昨夜は早めに寝たので、今日はいつもより集中できています。",
-      "answerEn": "Since I went to bed early last night, I can focus better than usual today.",
-      "phrases": [
-        "go to bed early",
-        "focus better than usual"
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0056",
-      "addedAt": "2026-07-25",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "障害調査・顧客依頼",
-      "promptJa": "お客様に追加ログを依頼する前に、既存の情報でどこまで原因を絞り込めるか確認しましょう。",
-      "answerEn": "Before asking the customer for additional logs, let's see how far we can narrow down the possible causes with the information we already have.",
-      "phrases": [
-        "ask someone for something"
-      ],
-      "points": [
-        "ask someone for somethingを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0057",
-      "addedAt": "2026-07-25",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害対応・意思決定",
-      "promptJa": "この案を進めるなら、想定どおりに機能しなかった場合の代替策も決めておきましょう。",
-      "answerEn": "If we move forward with this proposal, let's agree on a contingency plan in case it doesn't work as expected.",
-      "phrases": [
-        "agree on a contingency plan"
-      ],
-      "points": [
-        "agree on a contingency planを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0058",
-      "addedAt": "2026-07-25",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害対応・エスカレーション",
-      "promptJa": "復旧後に同じ兆候が再び現れた場合、どの時点で再エスカレーションするかを事前に決めておきましょう。",
-      "answerEn": "If the same indicators reappear after recovery, let's agree in advance on when to re-escalate.",
-      "phrases": [
-        "agree in advance on when to ...",
-        "the same indicators reappear",
-        "re-escalate"
-      ],
-      "points": [
-        "agree in advance on when to ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0059",
-      "addedAt": "2026-07-26",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今日は特に予定がないので、家でのんびりするつもりです。",
-      "answerEn": "Since I don't have any plans today, I'm going to take it easy at home.",
-      "phrases": [
-        "don't have any plans / take it easy at home"
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0060",
-      "addedAt": "2026-07-26",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "障害対応",
-      "promptJa": "次の更新では、調査済みの内容と、まだ確認できていない点を明確に分けてください。",
-      "answerEn": "In the next update, please clearly distinguish what has been investigated from what remains unconfirmed.",
-      "phrases": [
-        "distinguish A from B"
-      ],
-      "points": [
-        "distinguish A from Bを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0061",
-      "addedAt": "2026-07-26",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "ビジネス会議・意思決定",
-      "promptJa": "この変更を今すぐ実施する利点だけでなく、延期した場合のリスクも同じ基準で評価しましょう。",
-      "answerEn": "Let's evaluate not only the benefits of implementing this change right now, but also the risks of delaying it, using the same criteria.",
-      "phrases": [
-        "not only the benefits of ... but also the risks of ... / using the same criteria"
-      ],
-      "points": [
-        "not only A but also BではAとBを同じ文法形で並べる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0062",
-      "addedAt": "2026-07-26",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・顧客コミュニケーション",
-      "promptJa": "お客様が十分な情報に基づいて判断できるように、推奨案だけでなく、採用しなかった選択肢とその理由も説明しましょう。",
-      "answerEn": "To help the customer make an informed decision, let's explain not only our recommendation but also the alternatives we ruled out and why.",
-      "phrases": [
-        "make an informed decision / rule out an alternative"
-      ],
-      "points": [
-        "not only A but also BではAとBを同じ文法形で並べる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0063",
-      "addedAt": "2026-09-02",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今朝は少し眠かったのですが、短い散歩をしたら頭がすっきりしました。",
-      "answerEn": "Although I was a little sleepy this morning, taking a short walk helped clear my head.",
-      "phrases": [
-        "help clear my head"
-      ],
-      "points": [
-        "Although ...にはbutを重ねず、主節へつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0064",
-      "addedAt": "2026-09-02",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "ビジネス会議",
-      "promptJa": "この問題を今日中に解決できない場合は、少なくとも次のステップと担当者には合意しておきましょう。",
-      "answerEn": "If we can't resolve this issue today, let's at least agree on the next steps and owners.",
-      "phrases": [
-        "If we can't ..., let's at least agree on ..."
-      ],
-      "points": [
-        "If we can't ..., let's at least agree on ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0065",
-      "addedAt": "2026-07-19",
-      "source": [
-        "日本語→英語瞬発ドリル",
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "期限調整・根本原因の回答期限",
-      "promptJa": "【顧客との期限調整会議で発言】現時点の情報だけで、本日中に根本原因を確定するのは現実的ではありません。",
-      "answerEn": "It is not feasible to identify the root cause by the end of today based on the information currently available.",
-      "phrases": [
-        "Based on ..., it isn’t feasible to ... by ..."
-      ],
-      "points": [
-        "Based on ..., it isn’t feasible to ... by ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "mastered",
-      "lastReviewedAt": "2026-09-02",
-      "attempts": 1,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0066",
-      "addedAt": "2026-09-02",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害調査・因果関係",
-      "promptJa": "今回の変更がインシデントと同じ頃に行われたという事実だけでは、その変更が原因だと結論づけるには不十分です。",
-      "answerEn": "This change was made around the same time as the incident, but that alone is not enough to conclude that it caused the issue.",
-      "phrases": [
-        "That alone is not enough to conclude that ..."
-      ],
-      "points": [
-        "That alone is not enough to conclude that ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0067",
-      "addedAt": "2026-09-02",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "TAM・顧客コミュニケーション",
-      "promptJa": "Engineeringの回答を待っている間に、現時点で確認できている事実だけに基づいて、お客様へ伝えられる内容を整理しましょう。",
-      "answerEn": "While we wait for Engineering's reply, let's organize what we can share with the customer based only on the facts confirmed so far.",
-      "phrases": [
-        "based only on the facts confirmed so far"
-      ],
-      "points": [
-        "based only on the facts confirmed so farを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0068",
-      "addedAt": "2026-09-05",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Small talk",
-      "promptJa": "今週はかなり忙しかったので、今日は少しペースを落として過ごすつもりです。",
-      "answerEn": "Since I've been very busy this week, I'm going to take it easy today.",
-      "phrases": [
-        "take it easy"
-      ],
-      "points": [
-        "Since ...にはsoを重ねず、理由と結果をつなぐ。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0069",
-      "addedAt": "2026-09-05",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "ビジネス会議・優先順位",
-      "promptJa": "議論を続ける前に、今日決める必要があることと、後回しにできることを整理しましょう。",
-      "answerEn": "Before we continue the discussion, let's clarify what needs to be decided today and what can wait.",
-      "phrases": [
-        "what needs to be decided today and what can wait"
-      ],
-      "points": [
-        "what needs to be decided today and what can waitを、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0070",
-      "addedAt": "2026-09-05",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "TAM・顧客更新",
-      "promptJa": "お客様に次回の更新時刻を約束する前に、その時刻までにEngineeringから十分な情報を得られる見込みがあるか確認しましょう。",
-      "answerEn": "Before committing to a time for the next customer update, let's confirm whether we're likely to have enough information from Engineering by then.",
-      "phrases": [
-        "commit to a time / be likely to have ... by then"
-      ],
-      "points": [
-        "間接疑問文ではwhether以下を平叙文語順にする。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0071",
-      "addedAt": "2026-07-19",
-      "source": [
-        "日本語→英語瞬発ドリル",
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "RCA・仮説と確認済み事実",
-      "promptJa": "【RCA会議で発言】避けたいのは、仮説を確認済みの事実として顧客に伝え、不要な不安を招くことです。",
-      "answerEn": "The last thing we want is to present a hypothesis to the customer as a confirmed fact and cause unnecessary concern.",
-      "phrases": [
-        "present X to someone as Y"
-      ],
-      "points": [
-        "present X as Yは、仮説と確認済み事実を区別して伝える場面で使える。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": "2026-09-05",
-      "attempts": 1,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0072",
-      "addedAt": "2026-09-05",
-      "source": [
-        "日本語→英語瞬発ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害対応・変更判断",
-      "promptJa": "この変更を本番環境へ適用するか判断するには、技術的な実現可能性だけでなく、ロールバックに必要な時間とお客様の運用への影響も考慮する必要があります。",
-      "answerEn": "To decide whether to implement this change in production, we need to consider not only its technical feasibility but also the time required to roll it back and the impact on the customer's operations.",
-      "phrases": [
-        "the time required to ... and the impact on ..."
-      ],
-      "points": [
-        "whether to + 動詞で『〜するかどうか』を簡潔に示す。",
-        "not only A but also BではAとBを同じ文法形で並べる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0073",
-      "addedAt": "2026-07-17",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "緊急会議・安全確認",
-      "promptJa": "顧客に暫定対応を提案する前に、それが安全か確認するため、もう少し時間が必要です。",
-      "answerEn": "Before recommending temporary mitigation to the customer, we need a little more time to make sure it is safe.",
-      "phrases": [
-        "We need more time to make sure ..."
-      ],
-      "points": [
-        "We need more time to make sure ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0074",
-      "addedAt": "2026-07-18",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "根本原因解析・事実と仮説",
-      "promptJa": "今必要なのは、原因を決めつけることではなく、確認済みの事実と仮説を分けることです。",
-      "answerEn": "What we need now is not to assume the root cause, but to separate confirmed facts from assumptions.",
-      "phrases": [
-        "What we need now is to ...",
-        "What we need now is not to ..., but to ..."
-      ],
-      "points": [
-        "What we need now is to ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0075",
-      "addedAt": "2026-07-18",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "Email・顧客向け調査状況アップデート",
-      "promptJa": "【顧客向けEmailとして作成】初回のログ確認は完了しましたが、根本原因はまだ特定されていないことを、調査状況の更新として伝えてください。",
-      "answerEn": "I'm writing to update you on the investigation: we have completed our initial review of the logs, but the root cause has not yet been identified.",
-      "phrases": [
-        "I'm writing to update you on ...",
-        "The initial log review is complete, but the root cause remains under investigation."
-      ],
-      "points": [
-        "未確定の原因はunder investigationやnot yet identifiedで安全に示す。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0076",
-      "addedAt": "2026-07-18",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "フィードバック・責めずに理由を確認",
-      "promptJa": "【社内1 on 1で相手を責めずに発言】昨日の顧客向け更新に期限がなかったことに気づいたのですが、なぜ省いたのか伺ってもよいですか。",
-      "answerEn": "I noticed that yesterday's update didn't include a deadline. Do you mind if I ask why it was left out?",
-      "phrases": [
-        "I noticed that ... Do you mind if I ask why?",
-        "I noticed that ... Do you mind if I ask why ...?"
-      ],
-      "points": [
-        "I noticed that ... Do you mind if I ask why?を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0077",
-      "addedAt": "2026-07-18",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "会議クロージング・合意条件",
-      "promptJa": "【障害対応会議の最後に提案】顧客影響を確認し、各次アクションの担当者と期限について合意できない限り、会議を終了しないよう提案してください。",
-      "answerEn": "Before we wrap up this meeting, let's confirm the customer impact and agree on an owner and a deadline for each next action.",
-      "phrases": [
-        "Before we wrap up ..., let's ..."
-      ],
-      "points": [
-        "Before we wrap up ..., let's ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0078",
-      "addedAt": "2026-07-19",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "Slack・調査と次回更新",
-      "promptJa": "【インシデントSlackに投稿】この件を調べて、本日17時までにこのスレッドで更新します。",
-      "answerEn": "I'll investigate this issue and post an update in this thread by 17:00 JST today.",
-      "phrases": [
-        "I'll look into this and update the thread by ...",
-        "I'll look into this and post an update here by 17:00 JST today."
-      ],
-      "points": [
-        "I'll look into this and update the thread by ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0079",
-      "addedAt": "2026-07-19",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Medium",
-      "theme": "期限調整・前提条件",
-      "promptJa": "【顧客との期限調整会議で発言】今日中にログを受領できれば、明日の正午までに初回分析結果を共有できます。",
-      "answerEn": "If we receive the logs by the end of today, we can share the initial analysis results by noon tomorrow.",
-      "phrases": [
-        "Assuming ..., we can ... by ...",
-        "If we receive ..., we can share ... by ..."
-      ],
-      "points": [
-        "Assuming ..., we can ... by ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0080",
-      "addedAt": "2026-07-19",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "障害後の振り返り・未確定事項への注意",
-      "promptJa": "【障害後の振り返り会議で発言】顧客影響は確認されていませんが、根本原因の調査は続いていることを念頭に置いてください。",
-      "answerEn": "Although no customer impact has been confirmed, keep in mind that the root cause is still under investigation.",
-      "phrases": [
-        "Keep in mind that ..."
-      ],
-      "points": [
-        "Although ...にはbutを重ねず、主節へつなぐ。",
-        "未確定の原因はunder investigationやnot yet identifiedで安全に示す。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0081",
-      "addedAt": "2026-07-19",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "複数チーム会議・役割を丁寧に依頼",
-      "promptJa": "【障害対応会議で発言】次回の顧客更新まで、ログ分析を取りまとめ、未解決事項を各チームへ割り振る役を引き受けていただけますか。",
-      "answerEn": "Could you take the lead on the log analysis and allocate the outstanding items to the appropriate teams until the next customer update?",
-      "phrases": [
-        "Would you be willing to ...?"
-      ],
-      "points": [
-        "Would you be willing to ...?を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0082",
-      "addedAt": "2026-07-19",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "障害対応会議・議題の提示",
-      "promptJa": "【障害対応会議の冒頭で発言】今日は、現在の状況、顧客影響、次のアクションを確認します。",
-      "answerEn": "Today, we'll go over the current status, customer impact, and next actions.",
-      "phrases": [
-        "We'll go over ...",
-        "In this meeting, we'll review the current status, customer impact, and next actions."
-      ],
-      "points": [
-        "We'll go over ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": null,
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0083",
-      "addedAt": "2026-07-19",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Hard",
-      "theme": "運用ルール・担当者と期限の変更",
-      "promptJa": "【チームの運用ルールとして発言】次のアクションの担当者または期限を変更するたびに、その変更を顧客向け更新にも必ず反映してください。",
-      "answerEn": "Whenever the owner or deadline for the next action changes, make sure the change is reflected in the update to the customer as well.",
-      "phrases": [
-        "make sure a change is reflected in ..."
-      ],
-      "points": [
-        "make sure a change is reflected in ...を、この場面の定型表現として再利用できる。"
-      ],
-      "reviewStatus": "review",
-      "lastReviewedAt": null,
-      "attempts": 0,
-      "answerProvenance": "accepted"
-    },
-    {
-      "id": "ED-0084",
-      "addedAt": "2026-07-25",
-      "source": [
-        "IT英語瞬発作文ドリル"
-      ],
-      "difficulty": "Easy",
-      "theme": "顧客向けEmail・結びの一文",
-      "promptJa": "【日本語を顧客向けEmailの一文として英訳】今回の暫定対応についてご不明な点があれば、お知らせください。",
-      "answerEn": "Please let me know if you have any questions about this interim mitigation.",
-      "phrases": [
-        "Please let me know if you have any questions about ..."
-      ],
-      "points": [
-        "Please let me know if you have any questions about ...を、この場面の定型表現として再利用できる。"
+        "customer impact は impact on the customer とも表せます。担当者を文で尋ねるなら who currently owns this SR。具体的な確認対象を入れ替えて使います。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
@@ -1783,47 +24,1703 @@
       "answerProvenance": "assistant-model"
     },
     {
-      "id": "ED-0085",
-      "addedAt": "2026-09-02",
+      "id": "TE-0002",
+      "addedAt": "2026-09-25",
       "source": [
-        "IT英語瞬発作文ドリル"
+        "既存40選（01〜40）"
       ],
-      "difficulty": "Easy",
-      "theme": "顧客向けEmail・完了通知",
-      "promptJa": "【顧客向けEmailの一文として英訳】初回のログ確認が完了したことをお知らせします。",
-      "answerEn": "We have completed our initial review of the provided logs.",
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "性能低下がいつ始まり、その直前に何か変更があったか、確認していただけますか。",
+      "answerEn": "Could you confirm when the slowdown started and whether anything changed shortly before that?",
       "phrases": [
-        "I'm writing to let you know that ...",
-        "complete an initial review of ..."
+        "confirm + when / whether / what ... + 主語・動詞"
       ],
       "points": [
-        "I'm writing to let you know that ...を、この場面の定型表現として再利用できる。"
+        "間接疑問は when did it start ではなく when it started の語順です。確認内容は when we can share the next update、whether it affects multiple regions、under what conditions it is effective などに変更できます。be limited to ... は「〜に限られる」。preliminary は暫定的・予備的な値、validated は検証済みを表します。有効性の確認は、安全性の確認とは別です。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
       "attempts": 0,
-      "answerProvenance": "accepted"
+      "answerProvenance": "assistant-model"
     },
     {
-      "id": "ED-0086",
-      "addedAt": "2026-09-02",
+      "id": "TE-0003",
+      "addedAt": "2026-09-25",
       "source": [
-        "IT英語瞬発作文ドリル"
+        "既存40選（01〜40）"
       ],
-      "difficulty": "Medium",
-      "theme": "会議・担当者と期限を含む合意確認",
-      "promptJa": "【会議の終了前に発言】会議を終える前に、各アクションの担当者と期限を含め、合意した内容を確認しましょう。",
-      "answerEn": "Before we wrap up, let's go through what was agreed, including the owner and deadline for each action.",
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "切り替えに備えて、ロールバック条件、営業時間外のエスカレーション経路、待機担当者を確認しましょう。",
+      "answerEn": "To prepare for the switchover, let's confirm the rollback criteria, the escalation path outside business hours, and who will be on standby.",
       "phrases": [
-        "Let's go through what was agreed."
+        "prepare for + 備える対象"
       ],
       "points": [
-        "Let's go through what was agreed.を、この場面の定型表現として再利用できる。"
+        "be on standby＝待機する、rollback criteria＝ロールバックの判断基準。最終判断者も確認するなら who will make the final decision を確認項目に加えます。"
       ],
       "reviewStatus": null,
       "lastReviewedAt": null,
       "attempts": 0,
-      "answerProvenance": "accepted"
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0004",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "現時点の理解では、根本原因はまだ確認されておらず、調査は続いています。",
+      "answerEn": "My understanding so far is that the root cause has not been confirmed yet and the investigation is still ongoing.",
+      "phrases": [
+        "My understanding so far is that + 文"
+      ],
+      "points": [
+        "has not been confirmed は現在完了の受動態です。the root cause is still under investigation でも調査中と表せます。 keep in mind that ... は「〜を念頭に置く」。no customer impact has been confirmed は、影響がないと断定する表現ではありません。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0005",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "現時点では、お客様から追加の影響の報告は受けていません。",
+      "answerEn": "So far, we haven't received any reports of additional impact from the customer.",
+      "phrases": [
+        "So far, we haven't received any reports of ..."
+      ],
+      "points": [
+        "「報告を受けていない」と「影響がない」は別です。additional impact の additional を落とすと、追加の影響についての文ではなくなります。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0006",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "問題を再現できなくても、発生した条件は記録しておく必要があります。",
+      "answerEn": "Even if we can't reproduce the issue, we still need to document the conditions under which it occurred.",
+      "phrases": [
+        "Even if + 文, we still need to + 動詞"
+      ],
+      "points": [
+        "the conditions under which ...＝〜が起きた条件。再現手順を求める場合の語句は the exact steps that led to the issue。reproduce は再現する、recur は問題が再発することで、同じ意味ではありません。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0007",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "お客様に追加ログを依頼する前に、手元の情報で原因をどこまで絞り込めるか確認しましょう。",
+      "answerEn": "Before asking the customer for additional logs, let's see how far we can narrow down the possible causes with the information we already have.",
+      "phrases": [
+        "ask + 人 + for + 求める物・情報"
+      ],
+      "points": [
+        "narrow down the possible causes＝考えられる原因を絞り込む。行動を依頼する ask + 人 + to + 動詞 は19で扱います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0008",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "確認・調査を進める",
+      "promptJa": "その用語の意味がよく分からないので、簡単に説明していただけますか。",
+      "answerEn": "I'm not sure what that term means. Could you explain it briefly?",
+      "phrases": [
+        "be not sure + 疑問詞で始まる節"
+      ],
+      "points": [
+        "名詞を続ける形は be not sure about + 名詞。briefly は短く、in simple terms は分かりやすい言葉で、という意味です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0009",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "調査状況の更新としてご連絡します。初回のログ確認は完了しました。",
+      "answerEn": "I'm writing to update you on the investigation: we have completed our initial review of the logs.",
+      "phrases": [
+        "update + 人 + on + 話題"
+      ],
+      "points": [
+        "complete an initial review of ...＝〜の初回確認を完了する。必要なら未確定事項も添えます。ログ確認の完了だけで、原因が特定できたことにはなりません。調査中の伝え方は04に集約しています。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0010",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "最も避けたいのは、仮説を確認済みの事実としてお客様に伝え、不要な不安を招くことです。",
+      "answerEn": "The last thing we want is to present a hypothesis to the customer as a confirmed fact and cause unnecessary concern.",
+      "phrases": [
+        "present + 内容 + to + 相手 + as + どういうものとして伝えるか"
+      ],
+      "points": [
+        "The last thing we want is to ...＝最も避けたいのは〜すること。credible は信頼できそうなことで、confirmed と同じではありません。不安という感情を表す concern は、ここでは冠詞を付けません。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0011",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "今必要なのは、確認済みの事実と仮説を分けることです。",
+      "answerEn": "What we need now is to separate confirmed facts from hypotheses.",
+      "phrases": [
+        "separate A from B"
+      ],
+      "points": [
+        "distinguish A from B はAとBを区別する、という別の言い方です。hypotheses は検証対象となる仮説、assumptions は確認せずに置いている前提です。要点は、Engineeringの回答待ちでも based only on the facts confirmed so far（現時点の確認済み事実だけに基づいて）共有内容を整理できることです。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0012",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "反対意見がないことを、全員の合意だと解釈しないようにしましょう。",
+      "answerEn": "Let's not interpret the lack of objections as agreement from everyone.",
+      "phrases": [
+        "interpret A as B"
+      ],
+      "points": [
+        "lack of objections／absence of objections＝反対意見がないこと。be on the same page は認識が一致していることです。反対が聞こえないだけでは、一致したと判断できない場面で使います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0013",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "この変更はインシデントと同じ頃に行われましたが、それだけでは原因だと結論づけるには不十分です。",
+      "answerEn": "This change was made around the same time as the incident, but that alone is not enough to conclude that it caused the issue.",
+      "phrases": [
+        "That alone is not enough to conclude that + 文"
+      ],
+      "points": [
+        "around the same time as ...＝〜と同じ頃に。establish a causal relationship は因果関係を立証することです。同時発生は確認できていても、因果は未確認という場面を一つにまとめています。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0014",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "根本原因が確認されていないので、この変更で解決するとお客様に断言するのは避けるべきです。",
+      "answerEn": "Since the root cause hasn't been confirmed, we should avoid assuring the customer that this change will resolve the issue.",
+      "phrases": [
+        "avoid + 動詞ing／assure + 人 + that + 文"
+      ],
+      "points": [
+        "assure は相手に保証する・安心させる動詞です。assume（そうだと仮定する）とは異なります。解決と判断する・宣言する場合は15の形を使います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0015",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "回避策で影響が軽減していても、監視によってサービスの安定が確認されるまでは、インシデントの解決を宣言すべきではありません。",
+      "answerEn": "Even if the workaround has mitigated the impact, we shouldn't declare the incident resolved until monitoring confirms that the service is stable.",
+      "phrases": [
+        "declare + 対象 + 状態"
+      ],
+      "points": [
+        "consider the incident resolved は解決済みと判断すること、declare the incident resolved は解決を宣言することです。どちらも目的語と補語を取りますが、行為は異なります。mitigate the impact は影響の軽減であり、解決そのものではありません。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0016",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "Engineeringが確認するまでは、お客様に復旧見込み時刻を案内しない方が安全だと思います。",
+      "answerEn": "I think it would be safer not to give the customer an estimated recovery time until Engineering confirms it.",
+      "phrases": [
+        "It would be safer not to + 動詞 + until + 文"
+      ],
+      "points": [
+        "until は「確認する時点まで」という時間の境界です。estimated recovery time（復旧見込み時刻）と、次に報告する時刻は別です。次回更新の確約は21で扱います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0017",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "調査結果・確度を正確に伝える",
+      "promptJa": "お客様に返信する前に、この情報を共有する許可が出ているか確認していただけますか。",
+      "answerEn": "Before responding to the customer, could you confirm whether this information has been cleared for sharing with them?",
+      "phrases": [
+        "be cleared for + 名詞・動詞ing"
+      ],
+      "points": [
+        "「共有してよいか」という許可の確認です。「必要な人に共有済みか」という周知の確認は26に分けています。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0018",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "回避策が有効でも、変更のリスクをお客様に説明し、承認を得る必要があります。",
+      "answerEn": "Even if the workaround is effective, we still need to explain the risks of the change to the customer and get their approval.",
+      "phrases": [
+        "explain + 内容 + to + 相手"
+      ],
+      "points": [
+        "get the customer's approval＝お客様の承認を得る。explain the risks to the customer の語順で覚えます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0019",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "次回の更新には、お客様に実施をお願いする必要がある対応も含めてください。",
+      "answerEn": "In the next update, please also include the actions we need to ask the customer to take.",
+      "phrases": [
+        "ask + 人 + to + 動詞"
+      ],
+      "points": [
+        "take action＝対応する。依頼する行動をはっきりさせるため、を ask ... to ... で再構成しています。要点は、技術的に正しい回答でも、お客様が次に何をするか分からなければ十分ではないことです。情報そのものを求める ask ... for ... は07で扱います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0020",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "お客様が十分な情報に基づいて判断できるよう、推奨案だけでなく、採用しなかった選択肢とその理由も説明しましょう。",
+      "answerEn": "To help the customer make an informed decision, let's explain our recommendation, the alternatives we ruled out, and why we ruled them out.",
+      "phrases": [
+        "help + 人 + 動詞の原形"
+      ],
+      "points": [
+        "make an informed decision＝十分な情報に基づいて判断する。rule out an alternative＝選択肢を検討対象から外す。選択肢を説明するだけでなく、外した理由も含めます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0021",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "次回の顧客更新の時刻を約束する前に、それまでにEngineeringから十分な情報を得られる見込みがあるか確認しましょう。",
+      "answerEn": "Before committing to a time for the next customer update, let's confirm whether we're likely to have enough information from Engineering by then.",
+      "phrases": [
+        "commit to + 名詞・動詞ing／be likely to + 動詞"
+      ],
+      "points": [
+        "commit to a time＝時刻を確約する。by then＝その時刻までに。likely は見込みを表し、確定を意味しません。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0022",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "今日中にログを受領できれば、明日の正午までに初回分析結果を共有できます。",
+      "answerEn": "If we receive the logs by the end of today, we can share the initial analysis results by noon tomorrow.",
+      "phrases": [
+        "If + 条件, we can + 動詞 + by + 期限"
+      ],
+      "points": [
+        "by は「〜までに」、until は「〜まで継続」です。将来の条件でも、通常 if 節では現在形を使います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0023",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "現時点の情報では、今日中に根本原因を特定するのは現実的ではありません。",
+      "answerEn": "Based on the information currently available, it isn't feasible to identify the root cause by the end of today.",
+      "phrases": [
+        "Based on + 根拠, it isn't feasible to + 動詞"
+      ],
+      "points": [
+        "期限が難しい場合には clarify the bottleneck（障害になっている点を明確にする）、propose a realistic timeline（現実的な日程を提案する）と続けられます。安全性の確認に時間が必要という型は need a little more time to make sure ...。実現可能性・安全性・有効性は、それぞれ別の評価です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0024",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "この件を調べて、本日17時までにこのスレッドへ状況を投稿します。",
+      "answerEn": "I'll look into this issue and post an update in this thread by 17:00 JST today.",
+      "phrases": [
+        "look into + 調べる対象／post an update + 場所 + by + 期限"
+      ],
+      "points": [
+        "investigate this issue でも調べると表現できます。自分が実施することと、次に報告する期限をまとめて伝える文です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0025",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "顧客対応・期限を具体化する",
+      "promptJa": "この暫定対応についてご不明な点があれば、お知らせください。",
+      "answerEn": "Please let me know if you have any questions about this interim measure.",
+      "phrases": [
+        "let + 人 + 動詞の原形／questions about + 話題"
+      ],
+      "points": [
+        "interim measure／temporary measure＝暫定的な措置。回避策なら workaround、影響を抑える対応なら mitigation も使います。原本の interim mitigation を、より広く使える表現にしています。preliminary（予備的な・初期段階の）とは意味が違います。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0026",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "変更・意思決定を進める",
+      "promptJa": "担当者や期限が変わるたびに、関係者全員に周知され、その変更が顧客向け更新にも反映されていることを確認してください。",
+      "answerEn": "Whenever the owner or deadline changes, make sure everyone affected is informed and the change is reflected in the customer update as well.",
+      "phrases": [
+        "make sure + 文／be reflected in + 反映先"
+      ],
+      "points": [
+        "everyone affected は影響を受ける人全員です。知らせる側から言うなら inform + 人 + of + 内容。変更前の周知確認と、担当・期限変更の反映を組み合わせています。共有の許可を確認する17とは別の行為です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0027",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "変更・意思決定を進める",
+      "promptJa": "この変更が技術的に可能でも、本番環境で実施すべきとは限りません。",
+      "answerEn": "Even if this change is technically feasible, that doesn't necessarily mean we should implement it in production.",
+      "phrases": [
+        "Even if A, that doesn't necessarily mean B"
+      ],
+      "points": [
+        "Just because A doesn't mean B も同じ論理に使えます。technically feasible は技術的に実行可能なこと、operationally acceptable to the customer はお客様の運用上受け入れられることです。両者は別々に確認します。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0028",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "変更・意思決定を進める",
+      "promptJa": "この提案に反対ではありませんが、決定する前にリスクをもう少し理解したいです。",
+      "answerEn": "I'm not opposed to this proposal, but I'd like to understand the risks better before making a decision.",
+      "phrases": [
+        "be opposed to + 名詞・動詞ing"
+      ],
+      "points": [
+        "opposite ではなく opposed を使います。I agree with the overall direction ... は方向性への賛成を明示しますが、I'm not opposed to ... は反対ではないという控えめな表現です。必要なリソースやリスクを尋ねる場合は what resources are required／what risks are involved を使えます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0029",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "変更・意思決定を進める",
+      "promptJa": "Engineeringの見解は理解しましたが、お客様への影響を踏まえて、優先度を再検討していただけますか。",
+      "answerEn": "I understand Engineering's position, but given the customer impact, could we reconsider the priority?",
+      "phrases": [
+        "given + 判断の前提となる事情"
+      ],
+      "points": [
+        "given the customer impact＝お客様への影響を踏まえると。reconsider は再検討することで、必ず優先度を上げると決定した表現ではありません。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0030",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "変更・意思決定を進める",
+      "promptJa": "この変更を実施する利点だけでなく、延期するリスクも、同じ基準で評価しましょう。",
+      "answerEn": "Let's evaluate not only the benefits of implementing this change but also the risks of delaying it, using the same criteria.",
+      "phrases": [
+        "not only A but also B／using the same criteria"
+      ],
+      "points": [
+        "AとBはどちらも名詞句です。評価項目には the time required to roll it back や the impact on the customer's operations も使えます。come at a cost はコストを伴うこと。延期にもコストがある、という観点を含めて比較します。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0031",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "変更・意思決定を進める",
+      "promptJa": "想定どおりに機能しなかった場合に備え、この提案の代替策を事前に決めておきましょう。",
+      "answerEn": "Let's agree in advance on a contingency plan in case this proposal doesn't work as expected.",
+      "phrases": [
+        "agree on + 合意する内容／in case + 備える事態"
+      ],
+      "points": [
+        "in case は、その事態に備えて今準備する意味です。単なる条件の if とは働きが違います。再エスカレーションも、agree in advance on when to re-escalate として計画に含められます。復旧後の兆候には the same indicators reappear after recovery が使えます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0032",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "会議を進め、担当を決める",
+      "promptJa": "議論を続ける前に、今日決める必要があることと、後回しにできることを明確にしましょう。",
+      "answerEn": "Before we continue the discussion, let's clarify what needs to be decided today and what can wait.",
+      "phrases": [
+        "clarify what ... and what ..."
+      ],
+      "points": [
+        "what can wait＝今すぐ対応しなくてもよいこと。議題を提示する場合の型は Today, we'll go over ...。議題の例は the current status, customer impact, and next actions です。時間が限られているときの焦点整理も、ここにまとめています。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0033",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "会議を進め、担当を決める",
+      "promptJa": "遅延の理由よりも、タスクを完了するために必要な支援に焦点を当てましょう。",
+      "answerEn": "Let's focus on the support needed to complete the task rather than the reason for the delay.",
+      "phrases": [
+        "focus on A rather than B"
+      ],
+      "points": [
+        "reason for ...＝〜の理由。support needed to ... は、〜するために必要な支援です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0034",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "会議を進め、担当を決める",
+      "promptJa": "昨日の更新に期限が含まれていないことに気づきました。なぜ省かれたのか伺ってもよいですか。",
+      "answerEn": "I noticed that yesterday's update didn't include a deadline. Do you mind if I ask why it was left out?",
+      "phrases": [
+        "I noticed that ...／Do you mind if I ask why ...?"
+      ],
+      "points": [
+        "leave out＝省く、入れない。まず観察した事実を述べ、その理由を尋ねる形です。省いた相手を主語にしない言い方にもできます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0035",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "会議を進め、担当を決める",
+      "promptJa": "会議を終える前に、各アクションの担当者と期限を含め、合意した内容を確認しましょう。",
+      "answerEn": "Before we wrap up, let's go through what we've agreed on, including the owner and deadline for each action.",
+      "phrases": [
+        "Before we wrap up, let's ...／go through + 確認する内容"
+      ],
+      "points": [
+        "what we've agreed on＝合意した内容。who will do what and by when＝誰が何をいつまでに行うか。結論を出せない場合の at least agree on the next steps and owners も同じ項目にまとめています。align on ... は認識をそろえる表現です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0036",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "会議を進め、担当を決める",
+      "promptJa": "次回の顧客更新まで、ログ分析を取りまとめ、未解決事項を適切なチームへ割り振っていただけますか。",
+      "answerEn": "Could you take the lead on the log analysis and assign the outstanding items to the appropriate teams until the next customer update?",
+      "phrases": [
+        "take the lead on + 対象業務／assign A to B"
+      ],
+      "points": [
+        "outstanding items＝未処理・未解決の事項。allocate A to B も割り振りに使えます。until は、次回更新までその役割を継続する意味です。lead to ...（〜につながる）とは別の形です。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0037",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "会議を進め、担当を決める",
+      "promptJa": "音声が少し途切れました。最後の部分をもう一度言っていただけますか。",
+      "answerEn": "Your audio broke up a little. Could you say the last part again, please?",
+      "phrases": [
+        "audio breaks up／Could you say ... again?"
+      ],
+      "points": [
+        "一度理解した内容を再確認する場合と、音声が聞き取れなかった場合を区別して伝えられます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0038",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "近況を短く話す",
+      "promptJa": "午前中は会議が続いていましたが、午後なら通話の時間を取れます。",
+      "answerEn": "I had back-to-back meetings this morning, but I can make time for a call this afternoon.",
+      "phrases": [
+        "make time for + 名詞／make time to + 動詞"
+      ],
+      "points": [
+        "back-to-back meetings＝会議が続くこと、things have settled down＝状況が落ち着いたこと。be tied up は手が離せないことです。have some time は時間に余裕があること、make time は時間を確保すること。this afternoon は時を表す語句で、そのまま添えられます。earlier than usual は普段より早く、という比較に使えます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0039",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "近況を短く話す",
+      "promptJa": "短い散歩で頭がすっきりして、思っていたより調子が良いです。",
+      "answerEn": "Taking a short walk helped clear my head, and I feel better than I expected.",
+      "phrases": [
+        "動詞ingを主語にする／feel better than ..."
+      ],
+      "points": [
+        "help clear my head＝頭をすっきりさせる。状態には feel refreshed、行動には go to bed early なども使えます。better than usual（普段より）と better than I expected（予想より）は比較相手が違います。元の6文にある体調・気分転換の表現を、この項目に集めています。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0040",
+      "addedAt": "2026-09-25",
+      "source": [
+        "既存40選（01〜40）"
+      ],
+      "difficulty": null,
+      "theme": "近況を短く話す",
+      "promptJa": "今日は久しぶりに、家でゆっくり過ごすつもりです。",
+      "answerEn": "For the first time in a while, I'm going to take it easy at home today.",
+      "phrases": [
+        "for the first time in a while／take it easy"
+      ],
+      "points": [
+        "久しぶりの活動を述べると、休息の予定を述べる・を、一つの例文に再構成しています。don't have any plans は予定がないこと。take it easy の it を落とさず、まとまりで覚えます。"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0041",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "一点確認するために、少し発言してもよろしいですか。",
+      "answerEn": "Could I jump in for a moment to clarify one point?",
+      "phrases": [
+        "Could I jump in + to + 動詞?"
+      ],
+      "points": [
+        "jump in は会話に加わること。for a moment を添えると短い発言だと伝えられます。clarify one point は一点を明確にすることです。",
+        "別解・類似表現：May I add something here?（ここで一言補足してもよろしいですか。）"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0042",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "それを、もっと分かりやすい言葉で言い換えていただけますか。",
+      "answerEn": "Could you rephrase that in simpler terms?",
+      "phrases": [
+        "rephrase + 内容 + in + どのような言葉か"
+      ],
+      "points": [
+        "rephrase は意味を保って言い換えること。in simpler terms はより平易な言葉で、という意味です。repeat は同じ内容をもう一度言ってもらう場合に使います。",
+        "別解・類似表現：Could you put that another way?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0043",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "具体例を使って、手順を一つずつ説明していただけますか。",
+      "answerEn": "Could you walk me through the steps using a concrete example?",
+      "phrases": [
+        "walk + 人 + through + 手順・内容"
+      ],
+      "points": [
+        "walk me through ... で私に順を追って説明する。through の直後には説明対象を置きます。using a concrete example は具体例を使って、という補足です。",
+        "別解・類似表現：Could you explain the process step by step?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0044",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "理解が違っていたら訂正してください。再起動は任意ということですよね。",
+      "answerEn": "Please correct me if I've misunderstood, but the restart is optional, right?",
+      "phrases": [
+        "Please correct me if I've misunderstood, but + 自分の理解"
+      ],
+      "points": [
+        "correct の目的語は me。optional は任意、mandatory は必須です。ここでの but は、訂正を求める前置きから自分の理解へつなぐ働きです。",
+        "別解・類似表現：My understanding is that the restart is optional. Is that correct?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0045",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "先ほどの発言を訂正します。この変更の影響を受けるのはテスト環境だけです。",
+      "answerEn": "I need to correct something I said earlier: this change affects only the test environment.",
+      "phrases": [
+        "correct something I said earlier / affect + 対象"
+      ],
+      "points": [
+        "affect は他動詞なので、affects the environment と直接目的語を続けます。名詞 effect なら have an effect on the environment。something I said earlier は先ほど私が言ったことです。",
+        "別解・類似表現：Let me correct my earlier statement: only the test environment is affected."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0046",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "ネットワークチームのどなたか、この点についてご意見をいただけますか。",
+      "answerEn": "Could someone from the network team weigh in on this?",
+      "phrases": [
+        "weigh in on + 話題"
+      ],
+      "points": [
+        "weigh in on は議論に意見を述べること。専門的な判断を相手に委ねる場合は I'll defer to Engineering on the technical feasibility. とも言えます。defer to は敬意をもって判断に従うことで、案件全体の責任移管とは別です。",
+        "別解・類似表現：Could someone from the network team share their view on this?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0047",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "調査に進展があれば、引き続き私にも共有してください。",
+      "answerEn": "Please keep me in the loop on any developments in the investigation.",
+      "phrases": [
+        "keep + 人 + in the loop on + 話題"
+      ],
+      "points": [
+        "keep me in the loop は私も継続的に状況を把握できるようにしておくこと。developments はここでは開発ではなく進展です。",
+        "別解・類似表現：Please keep me informed of any developments in the investigation."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0048",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "グローバル会議に参加し、進行を助ける",
+      "promptJa": "欧州チームが参加できるよう、会議を日本時間の午後5時から午後6時に変更できますか。",
+      "answerEn": "Could we move the meeting from 5 p.m. to 6 p.m. JST so the Europe team can join?",
+      "phrases": [
+        "move + 会議 + from + 変更前 + to + 変更後"
+      ],
+      "points": [
+        "from A to B の形で覚えます。move forward / move back だけでは時刻の解釈が分かれることがあるため、具体的な時刻を添えると確実です。複数日にまたがる調整では日付も示します。この例は時差を計算した実際の予定ではありません。",
+        "別解・類似表現：Would 6 p.m. JST work for the Europe team?（日本時間の午後6時なら欧州チームは都合がつきますか。）"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0049",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "私たちのチームは、調査の調整を担当しています。",
+      "answerEn": "Our team is responsible for coordinating the investigation.",
+      "phrases": [
+        "人・チーム + be responsible for + 名詞 / -ing"
+      ],
+      "points": [
+        "主語は責任を持つ側です。for は前置詞なので、動詞を続けるなら coordinating。ここでは調査の調整を担当するという意味で、技術調査そのものをすべて担当するとは述べていません。responsible for は機器などが原因である場合にも使えますが、この文では担当責任です。",
+        "別解・類似表現：Our team is in charge of coordinating the investigation."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0050",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "今日の勤務を終える前に、この案件を次のシフトに引き継ぎます。",
+      "answerEn": "I'll hand over this case to the next shift before I finish for the day.",
+      "phrases": [
+        "hand over + 案件 + to + 引き継ぎ先"
+      ],
+      "points": [
+        "hand over this case / hand this case over はどちらも可能です。代名詞なら hand it over。名詞の handover は引き継ぎ、動詞は hand over と分けます。the next shift は次の勤務帯の担当者を指します。",
+        "別解・類似表現：I'll hand this case over to the next shift before I finish for the day."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0051",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "未完了の分析について、Engineeringに状況を確認します。",
+      "answerEn": "I'll follow up with Engineering on the pending analysis.",
+      "phrases": [
+        "follow up with + 相手 + on + 用件"
+      ],
+      "points": [
+        "with の後は連絡相手、on の後は用件です。pending はここでは未完了・保留中という意味。動詞 follow up は2語、名詞や形容詞では a follow-up / a follow-up email のように表記します。",
+        "別解・類似表現：I'll check with Engineering on the status of the analysis."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0052",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "開始日は、承認をいつ得られるかによって決まります。",
+      "answerEn": "The start date depends on when we receive approval.",
+      "phrases": [
+        "depend on + 名詞 / 疑問詞節"
+      ],
+      "points": [
+        "depend の後は on。when we receive approval は間接疑問の語順です。approval はここでは一般的な承認なので無冠詞ですが、特定の承認なら the approval とも言えます。",
+        "別解・類似表現：The start date depends on the approval timeline."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0053",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "アクセス権がないため、ログを収集できていません。",
+      "answerEn": "Lack of access is preventing us from collecting the logs.",
+      "phrases": [
+        "prevent + 人 + from + -ing"
+      ],
+      "points": [
+        "妨げる原因を主語にします。from の後は collecting。prevent us to collect ではありません。access to the system はシステムへのアクセス、動詞なら access the system と直接目的語を置きます。",
+        "別解・類似表現：We can't collect the logs because we don't have the necessary access."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0054",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "エラーメッセージを原文のまま共有していただけますか。",
+      "answerEn": "Could you provide us with the exact error message?",
+      "phrases": [
+        "provide + 人 + with + 物・情報"
+      ],
+      "points": [
+        "provide us with the message の us が受け手、message が提供内容です。provide the message to us も可能です。exact は正確な文言そのもの、という意味で、単なる症状の要約を求めているわけではありません。",
+        "別解・類似表現：Could you send us the exact error message?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0055",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "まず、本番以外の環境で回避策を検証することをお勧めします。",
+      "answerEn": "We recommend testing the workaround in a non-production environment first.",
+      "phrases": [
+        "recommend + -ing / recommend that + 主語 + 動詞"
+      ],
+      "points": [
+        "ここでは recommend testing とします。We recommend to test ... とはしません。We recommend that you test ... も自然です。non-production environment は開発・テストなど本番以外の環境を指し、本番と同じ条件を必ず再現できるとは限りません。",
+        "別解・類似表現：We recommend that you test the workaround in a non-production environment first."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0056",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "TAM・一般IT業務を進める",
+      "promptJa": "この日程は、お客様の承認を得ることが条件です。",
+      "answerEn": "This schedule is subject to the customer's approval.",
+      "phrases": [
+        "be subject to + 条件"
+      ],
+      "points": [
+        "subject to approval は承認が必要・承認次第という意味で、承認済みとは言っていません。subject to change は変更の可能性がある、という別の定番表現です。approval from the customer も使えます。",
+        "別解・類似表現：This schedule requires the customer's approval."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0057",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "既存のインスタンスの性能を上げるよりも、台数を増やして対応する必要があるかもしれません。",
+      "answerEn": "We may need to scale out by adding more instances rather than scale up the existing ones.",
+      "phrases": [
+        "scale out by + -ing / scale up + 対象"
+      ],
+      "points": [
+        "scale out は台数を増やす水平拡張、scale up は個々のリソースの容量・性能を上げる垂直拡張です。ones は instances の繰り返しを避けています。may need to で必要性を留保しています。どちらが適切かはアプリケーションの構成にも依存します。",
+        "別解・類似表現：We may need more instances rather than larger ones."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0058",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "ハードウェア障害の影響を減らすため、インスタンスを複数のフォルト・ドメインに分散させましょう。",
+      "answerEn": "Let's distribute the instances across multiple fault domains to reduce the impact of a hardware failure.",
+      "phrases": [
+        "distribute + 対象 + across + 複数の配置先"
+      ],
+      "points": [
+        "OCIの fault domain は availability domain 内のハードウェアやインフラのグループです。region / availability domain / fault domain は同義ではありません。分散で単一の障害による同時影響を減らせても、システム全体の無停止を保証するわけではありません。",
+        "別解・類似表現：Let's spread the instances across multiple fault domains."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0059",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "プライマリ・データベースが利用できなくなった場合、スタンバイ・データベースにフェイルオーバーできますか。",
+      "answerEn": "If the primary database becomes unavailable, can we fail over to the standby database?",
+      "phrases": [
+        "fail over to + 切り替え先"
+      ],
+      "points": [
+        "動詞は fail over、名詞は failover。Data Guardの文脈では、switchover は通常、計画的にプライマリとスタンバイの役割を交換する操作です。failover はプライマリの障害・到達不能などに伴いスタンバイを昇格する操作です。所要時間やデータ損失の有無は構成・状態によって異なります。",
+        "別解・類似表現：Can we switch to the standby database if the primary becomes unavailable?（技術的な操作名をぼかした言い方。）"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0060",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "この復旧計画で、目標復旧時間と目標復旧時点を満たせますか。",
+      "answerEn": "Can this recovery plan meet our recovery time and recovery point objectives?",
+      "phrases": [
+        "meet + 目標・要件"
+      ],
+      "points": [
+        "RTO（recovery time objective）は、復旧までに許容できる時間の目標。RPO（recovery point objective）は、どの時点までのデータを復旧できる必要があるかを示し、許容するデータ損失を時間で表します。目標値と、実際に達成・検証された結果は別です。meet の後に with は不要です。",
+        "別解・類似表現：Can this recovery plan meet our RTO and RPO requirements?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0061",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "調査チームに、監視ダッシュボードの読み取り専用アクセス権を付与していただけますか。",
+      "answerEn": "Could you grant the investigation team read-only access to the monitoring dashboard?",
+      "phrases": [
+        "grant + 人 + access to + 対象"
+      ],
+      "points": [
+        "grant は権限などを付与すること。access はこの意味では通常不可算で、an access とはしません。read-only は読み取り専用です。IAM（identity and access management）は認証・アクセス権限などを管理する仕組みを指します。",
+        "別解・類似表現：Could you give the investigation team read-only access to the monitoring dashboard?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0062",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "このデータベースには、パブリックインターネット経由ではなく、プライベート・エンドポイント経由でのみ接続できます。",
+      "answerEn": "This database is reachable only through a private endpoint, not over the public internet.",
+      "phrases": [
+        "be reachable through + 接続経路"
+      ],
+      "points": [
+        "reachable は到達可能な、という形容詞。endpoint は接続先、private endpoint はプライベートなネットワーク経路で利用する接続先です。この文はそのように構成した架空の環境を説明しています。プライベート・エンドポイントがあれば、別のパブリック経路が必ず無効になるという一般則ではありません。",
+        "別解・類似表現：This database can be accessed only via a private endpoint."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0063",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "ロードバランサーが、正常なバックエンドにトラフィックを振り分けているか確認していただけますか。",
+      "answerEn": "Could you check whether the load balancer is routing traffic to healthy backends?",
+      "phrases": [
+        "route + traffic + to + 接続先"
+      ],
+      "points": [
+        "load balancer は負荷分散を行う仕組み、backend はその背後でリクエストを処理する接続先です。healthy はヘルスチェック上正常であることを指します。ヘルスチェック成功だけで、利用者の全操作が正常だとまでは断定できません。traffic はこの意味では通常不可算です。",
+        "別解・類似表現：Could you check that traffic is being routed to healthy backends?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0064",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "スループットが高くなっても、必ずしもレイテンシが低くなるとは限りません。",
+      "answerEn": "Higher throughput does not necessarily result in lower latency.",
+      "phrases": [
+        "result in + 結果"
+      ],
+      "points": [
+        "throughput は単位時間当たりの処理量、latency は処理・通信などにかかる遅延時間です。測定区間や単位も合わせて確認します。A results in B はAがBにつながる、B results from A はBがAによって生じる。necessarily は必ずしも、という判断の強さを調整します。",
+        "別解・類似表現：Higher throughput doesn't always mean lower latency."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0065",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "トレースIDを使って、アプリケーションログを分散トレースに関連付けていただけますか。",
+      "answerEn": "Could you use the trace ID to link the application logs to the distributed trace?",
+      "phrases": [
+        "link + A + to + B"
+      ],
+      "points": [
+        "distributed trace はサービスをまたぐ処理の流れを追跡する情報、trace ID はそのトレースの識別子です。ログとの関連付けには、ログへのIDの記録など適切な計装が必要です。observability（可観測性）の関連語として logs / metrics / traces をまとめて覚えると便利です。",
+        "別解・類似表現：Could you correlate the application logs with the distributed trace using the trace ID?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0066",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "このクライアントライブラリは、新しいAPIバージョンと互換性がありますか。",
+      "answerEn": "Is this client library compatible with the new API version?",
+      "phrases": [
+        "be compatible with + 対象"
+      ],
+      "points": [
+        "compatible の後は with。compatibility は名詞の互換性です。backward compatibility は後方互換性。互換性があることと、ベンダーのサポート対象であることは分けて確認します。",
+        "別解・類似表現：Does this client library support the new API version?（こちらは対応しているかを尋ねる表現。）"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0067",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "ストレージに加えて、リージョン間のデータ転送にも料金がかかりますか。",
+      "answerEn": "Are we charged for data transferred between regions as well as for storage?",
+      "phrases": [
+        "be charged for + 課金対象"
+      ],
+      "points": [
+        "charge 人 for 物・サービス の受動態です。data transferred between regions はリージョン間で転送されるデータ。egress は外向きのデータ転送を指す用語ですが、課金上の区分はサービスによって異なります。この疑問文は、実際に課金されると断定していません。",
+        "別解・類似表現：Does inter-region data transfer incur additional charges?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0068",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "クラウドの構成・運用を説明する",
+      "promptJa": "新しいコンテナイメージを段階的に展開し、エラー率を監視しましょう。",
+      "answerEn": "Let's roll out the new container image in stages and monitor the error rate.",
+      "phrases": [
+        "roll out + 変更・リリース + in stages"
+      ],
+      "points": [
+        "roll out は展開する、名詞 rollout は展開。container image は実行に必要なアプリケーションなどをまとめたイメージで、実行中の container とは区別します。in stages は段階的に。段階展開の具体的な方法や切り戻し条件は別途決めます。",
+        "別解・類似表現：Let's deploy the new container image gradually and monitor the error rate."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0069",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "人が確認するための障害要約の下書きを、LLMで作成する予定です。",
+      "answerEn": "We plan to use an LLM to draft incident summaries for human review.",
+      "phrases": [
+        "use + 手段 + to + 動詞 / for + 用途"
+      ],
+      "points": [
+        "LLM は large language model（大規模言語モデル）。draft は下書きを作ること、human review は人による確認です。LLM は通常エル・エル・エムと読み、母音の音で始まるため an LLM とします。この文は学習用の導入計画の例です。",
+        "別解・類似表現：We plan to use an LLM to prepare draft incident summaries for a person to review."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0070",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "RAGを使って、モデルの回答を承認済みの社内文書に基づくものにできますか。",
+      "answerEn": "Can we use RAG to ground the model's answers in approved internal documents?",
+      "phrases": [
+        "ground + 回答・判断 + in + 根拠"
+      ],
+      "points": [
+        "RAG は retrieval-augmented generation（検索拡張生成）。関連情報を検索し、モデルが回答を生成する際の文脈として渡す方法です。ground A in B はAをBに基づかせること。RAGを導入しただけで正確性が保証されるわけではなく、検索結果と生成内容の両方を評価します。",
+        "別解・類似表現：Can we use RAG so the model bases its answers on approved internal documents?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0071",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "検索クエリと意味の近い文章を検索できるよう、文書を分割したチャンクを埋め込みベクトルに変換します。",
+      "answerEn": "We convert document chunks into embeddings so that we can retrieve text that is semantically similar to a query.",
+      "phrases": [
+        "convert + A + into + B / so that + 文"
+      ],
+      "points": [
+        "chunk は分割した文書片、embedding は内容の特徴を表す数値ベクトルです。クエリも対応する埋め込みに変換し、ベクトル同士の類似度を比較します。類似度の高さは事実の正しさや回答に必要な情報の十分さを保証しません。retrieval は検索・取得です。",
+        "別解・類似表現：We turn document chunks into embeddings to search for text that is semantically similar to a query."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0072",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "検索した内容とモデルの回答の両方を収められるよう、コンテキストウィンドウに十分な余裕を残す必要があります。",
+      "answerEn": "We need to leave enough room in the context window for both the retrieved content and the model's response.",
+      "phrases": [
+        "leave enough room for + 対象"
+      ],
+      "points": [
+        "context window はモデルが一度に扱える文脈の範囲で、通常token数で表されます。token はテキストなどを処理する単位で、英単語1個や文字1個と常に一致しません。入力・出力・推論用tokenの上限や計数方法はモデルにより異なるため、個別の仕様を確認します。room はここでは余地で、通常不可算です。",
+        "別解・類似表現：We need to reserve enough context space for the retrieved content and the response."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0073",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "ラベル付きの例でファインチューニングすると、出力形式の一貫性は改善するでしょうか。",
+      "answerEn": "Would fine-tuning on labeled examples improve the consistency of the output format?",
+      "phrases": [
+        "fine-tune on + 学習データ / improve + 対象"
+      ],
+      "points": [
+        "supervised fine-tuning は、期待する出力を示した例などでモデルを追加学習させること。重みや追加パラメータを調整する点が、回答時に情報を渡す通常のRAGとは異なります。改善を保証する文ではなく、評価して確かめるための問いです。",
+        "別解・類似表現：Would fine-tuning the model on labeled examples make the output format more consistent?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0074",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "新しいプロンプトを導入する前に、実際の利用を代表するテストセットで評価しましょう。",
+      "answerEn": "Let's evaluate the new prompt on a representative test set before we deploy it.",
+      "phrases": [
+        "evaluate + 対象 + on + 評価用データ"
+      ],
+      "points": [
+        "representative は想定する実際の利用を代表する、という意味。test set は評価用データの集合です。既存のプロンプトとの比較なら compare the results with the baseline と言えます。同じテストに合わせて調整し続ける場合は、別の未使用データでの確認も必要です。",
+        "別解・類似表現：Let's test the new prompt on examples that reflect how it will be used."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0075",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "生成された内容の主張を、引用されている情報源と照合して確認していただけますか。",
+      "answerEn": "Could you verify the generated claims against the cited sources?",
+      "phrases": [
+        "verify + 内容 + against + 照合先"
+      ],
+      "points": [
+        "against はここでは反対ではなく、照合の基準を示します。hallucination は、もっともらしくても事実に反する内容などをモデルが生成すること。引用が付いていても、その情報源が存在し、内容を裏付けているかを確認します。",
+        "別解・類似表現：Could you check whether the cited sources actually support the generated claims?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0076",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "検索やモデルの推論を含め、応答時間を処理段階ごとに分けて示していただけますか。",
+      "answerEn": "Could you break down the response time by stage, including retrieval and model inference?",
+      "phrases": [
+        "break down + 数値・処理 + by + 分類軸"
+      ],
+      "points": [
+        "break down はここでは故障するではなく、内訳に分ける。inference はモデルを使って入力から出力を得る処理で、学習を指す training と区別します。including は例示なので、検索と推論以外の通信・待ち時間なども含めて分析できます。",
+        "別解・類似表現：Could you show how much of the response time is spent on each stage?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0077",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "回答に必要な情報を失わずに、トークン使用量を減らせますか。",
+      "answerEn": "Can we reduce token usage without losing information needed to answer the question?",
+      "phrases": [
+        "without + -ing / information needed to + 動詞"
+      ],
+      "points": [
+        "without の後は losing。information は通常不可算です。needed to answer the question は information を後ろから説明しています。token数と料金・応答時間の関係は、モデル、課金方式、キャッシュなどにも依存します。",
+        "別解・類似表現：Can we use fewer tokens while preserving the information needed for the answer?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0078",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "プロンプトと回答がどのくらい保存されるのか、またモデルの学習に使われるのかを明確にしていただけますか。",
+      "answerEn": "Could you clarify how long prompts and responses are retained and whether they are used for model training?",
+      "phrases": [
+        "clarify + how long ... / whether ..."
+      ],
+      "points": [
+        "retain は保持する、data retention はデータ保持です。are retained / are used は受動態。学習に利用しないことは、保存しないことと同じではありません。この文は確認の問いであり、特定のサービスの条件を説明しているわけではありません。",
+        "別解・類似表現：What is the retention period for prompts and responses, and are they used for training?"
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0079",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "エージェントは、取得した文書の中にある指示を、信頼できない内容として扱うべきです。",
+      "answerEn": "The agent should treat instructions found in retrieved documents as untrusted content.",
+      "phrases": [
+        "treat + A + as + B"
+      ],
+      "points": [
+        "prompt injection は、モデルが読む内容に指示を埋め込み、意図しない動作を誘導する攻撃です。文書など経由のものは indirect prompt injection。untrusted は誤りと確定したという意味ではなく、正当な指示として信頼できないという意味です。この方針をプロンプトに書くだけで防御が完成するわけではありません。",
+        "別解・類似表現：The agent should not automatically follow instructions embedded in retrieved documents."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
+    },
+    {
+      "id": "TE-0080",
+      "addedAt": "2026-09-25",
+      "source": [
+        "追加40選（41〜80）"
+      ],
+      "difficulty": null,
+      "theme": "AIの仕組み・評価・利用条件を確認する",
+      "promptJa": "操作の承認プロセスを検証できるまでは、エージェントが使えるツールを読み取り専用のものに限定しましょう。",
+      "answerEn": "Let's restrict the agent to read-only tools until the action approval process has been validated.",
+      "phrases": [
+        "restrict + 対象 + to + 許容する範囲"
+      ],
+      "points": [
+        "restrict A to B はAをBに制限する。until 以下の has been validated は現在完了の受動態です。agent はここではツールを使って作業を進めるAIシステムを指します。read-only は更新操作を制限するもので、読み取るデータへのアクセス制御も別途必要です。",
+        "別解・類似表現：Let's allow the agent to use only read-only tools until we've validated the action approval process."
+      ],
+      "reviewStatus": null,
+      "lastReviewedAt": null,
+      "attempts": 0,
+      "answerProvenance": "assistant-model"
     }
   ]
 }

@@ -1,5 +1,7 @@
 import type { CardFilters, DrillCard } from "../types";
 
+export type DrillOrder = "listed" | "random";
+
 function normalizeSearchValue(value: string): string {
   return value.normalize("NFKC").toLocaleLowerCase().replace(/\s+/gu, " ").trim();
 }
@@ -45,5 +47,21 @@ export function createShuffledQueue<T>(values: readonly T[], random: () => numbe
     [queue[index], queue[swapIndex]] = [queue[swapIndex], queue[index]];
   }
 
+  return queue;
+}
+
+/** Builds a fresh round from the source order, avoiding consecutive repeats only when shuffled. */
+export function createDrillQueue<T>(
+  values: readonly T[],
+  order: DrillOrder,
+  previous?: T | null,
+  random: () => number = Math.random,
+): T[] {
+  if (order === "listed") return [...values];
+
+  const queue = createShuffledQueue(values, random);
+  if (queue.length > 1 && queue[0] === previous) {
+    [queue[0], queue[1]] = [queue[1], queue[0]];
+  }
   return queue;
 }

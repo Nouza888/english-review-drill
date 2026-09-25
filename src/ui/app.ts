@@ -1,5 +1,5 @@
 import type { Difficulty, DrillCard, GlossaryTerm, StudyCard } from "../types";
-import { createShuffledQueue } from "../lib/cards";
+import { createDrillQueue, type DrillOrder } from "../lib/cards";
 import {
   COLLECTION_LABELS, filterGlossary, filterStudyCards, relatedTerms, termCollections,
   type CollectionId,
@@ -13,6 +13,8 @@ interface DrillFilters {
   pool: DrillPool;
   theme: string;
   difficulty: string;
+  source: string;
+  order: DrillOrder;
 }
 
 interface ListFilters {
@@ -45,7 +47,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
   let glossaryQuery = "";
   let glossaryTag = ALL;
   let answerVisible = false;
-  let drillFilters: DrillFilters = { pool: "review", theme: ALL, difficulty: ALL };
+  let drillFilters: DrillFilters = { pool: "all", theme: ALL, difficulty: ALL, source: ALL, order: "listed" };
   let listFilters: ListFilters = {
     query: "",
     status: "all",
@@ -143,7 +145,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
   }
 
   function renderDrillRoute(): string {
-    const { themes, difficulties, hasUnsetDifficulty } = collectionOptions();
+    const { themes, sources, difficulties, hasUnsetDifficulty } = collectionOptions();
     return `
       <section class="workspace" aria-label="ドリル">
         <div class="filter-bar drill-filters" aria-label="出題条件">
@@ -154,6 +156,20 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
               ${option("all", "全問題", drillFilters.pool)}
               ${option("session", "今回のチェック", drillFilters.pool)}
               ${option("mastered", "✓ 定着済み", drillFilters.pool)}
+            </select>
+          </label>
+          <label class="drill-source-filter">
+            <span>出典</span>
+            <select name="drill-source">
+              ${option(ALL, "すべて", drillFilters.source)}
+              ${sources.map((source) => option(source, source, drillFilters.source)).join("")}
+            </select>
+          </label>
+          <label>
+            <span>出題順</span>
+            <select name="drill-order">
+              ${option("listed", "掲載順", drillFilters.order)}
+              ${option("random", "ランダム", drillFilters.order)}
             </select>
           </label>
           <label>
@@ -187,7 +203,7 @@ export function mountApp(root: HTMLElement, cards: StudyCard[], generatedAt: str
         <div class="empty-state" role="status">
           <span class="empty-icon" aria-hidden="true">○</span>
           <h2>${drillFilters.pool === "session" ? "今回チェックした問題がありません" : "条件に合う問題がありません"}</h2>
-          <p>${drillFilters.pool === "session" ? "「全問題」などで問題にチェックを付けるか、テーマ・難易度を変更してください。" : "出題範囲またはフィルターを変更してください。"}</p>
+          <p>${drillFilters.pool === "session" ? "「全問題」などで問題にチェックを付けるか、出典・テーマ・難易度を変更してください。" : "出題範囲またはフィルターを変更してください。"}</p>
         </div>
       `;
     }
@@ -429,8 +445,6 @@ ${escapeHtml(answerDrafts.get(currentCard.id) ?? "")}</textarea>
         const card = cardsById.get(target.dataset.cardId ?? "");
         if (!card) return;
         switchCollection(card.collectionId);
-        drillFilters.pool = "all";
-        resetDeck();
         deck.ids = [card.id, ...deck.ids.filter((id) => id !== card.id)];
         deck.position = 0;
         deck.currentId = card.id;
@@ -484,6 +498,8 @@ ${escapeHtml(answerDrafts.get(currentCard.id) ?? "")}</textarea>
     if (name === "drill-pool") drillFilters.pool = value as DrillPool;
     if (name === "drill-theme") drillFilters.theme = value;
     if (name === "drill-difficulty") drillFilters.difficulty = value;
+    if (name === "drill-source") drillFilters.source = value;
+    if (name === "drill-order") drillFilters.order = value as DrillOrder;
 
     if (name.startsWith("drill-")) {
       resetDeck();
@@ -592,7 +608,10 @@ ${escapeHtml(answerDrafts.get(currentCard.id) ?? "")}</textarea>
 
   function switchCollection(nextCollection: CollectionId): void {
     collectionId = nextCollection;
-    drillFilters = { pool: nextCollection === "tam" ? "review" : "all", theme: ALL, difficulty: ALL };
+    drillFilters = {
+      pool: "all", theme: ALL, difficulty: ALL, source: ALL,
+      order: nextCollection === "tam" ? "listed" : "random",
+    };
     listFilters = { query: "", status: "all", theme: ALL, difficulty: ALL, source: ALL };
     resetDeck();
   }
@@ -602,12 +621,13 @@ ${escapeHtml(answerDrafts.get(currentCard.id) ?? "")}</textarea>
       status: drillFilters.pool === "session" ? "all" : drillFilters.pool,
       theme: drillFilters.theme === ALL ? undefined : drillFilters.theme,
       difficulty: difficultyFilter(drillFilters.difficulty),
+      source: drillFilters.source === ALL ? undefined : drillFilters.source,
     }).filter((card) => drillFilters.pool !== "session" || sessionReviewIds.has(card.id));
   }
 
   function resetDeck(): void {
     const matchingCards = filteredDrillCards();
-    const ids = createShuffledQueue(matchingCards.map((card) => card.id));
+    const ids = createDrillQueue(matchingCards.map((card) => card.id), drillFilters.order);
     deck = { ids, position: 0, cycle: 1, currentId: ids[0] ?? null };
     answerVisible = false;
   }
@@ -634,10 +654,7 @@ ${escapeHtml(answerDrafts.get(currentCard.id) ?? "")}</textarea>
       deck.position += 1;
       deck.currentId = deck.ids[deck.position];
     } else {
-      const nextIds = createShuffledQueue(deck.ids);
-      if (nextIds.length > 1 && nextIds[0] === previousId) {
-        [nextIds[0], nextIds[1]] = [nextIds[1], nextIds[0]];
-      }
+      const nextIds = createDrillQueue(filteredDrillCards().map((card) => card.id), drillFilters.order, previousId);
       deck = { ids: nextIds, position: 0, cycle: deck.cycle + 1, currentId: nextIds[0] ?? null };
     }
     answerVisible = false;

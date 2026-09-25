@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { createShuffledQueue, filterCards } from "../src/lib/cards";
+import { createDrillQueue, createShuffledQueue, filterCards } from "../src/lib/cards";
 import type { DrillCard } from "../src/types";
 
 const baseCard: DrillCard = {
@@ -80,5 +80,33 @@ describe("createShuffledQueue", () => {
 
   it("rejects an invalid random source", () => {
     expect(() => createShuffledQueue([1, 2], () => 1)).toThrow(RangeError);
+  });
+});
+
+describe("createDrillQueue", () => {
+  it("keeps source order after filtering and at the start of the next listed round", () => {
+    const ids = filterCards(cards, { source: "study-chat-1" }).map(({ id }) => id);
+    expect(ids).toEqual(["drill-001", "drill-003"]);
+    const firstRound = createDrillQueue(ids, "listed");
+    expect(firstRound).toEqual(ids);
+    expect(firstRound).not.toBe(ids);
+    expect(createDrillQueue(ids, "listed", "drill-003")).toEqual(ids);
+    // An individually opened card must not change the next round's source order.
+    expect(createDrillQueue(ids, "listed", "drill-001")).toEqual(ids);
+  });
+
+  it("avoids repeating the previous card at the start of a random round", () => {
+    const ids = ["a", "b", "c"];
+    const nextRound = createDrillQueue(ids, "random", "a", () => 0.99);
+    expect(nextRound[0]).not.toBe("a");
+    expect([...nextRound].sort()).toEqual(ids);
+    expect(ids).toEqual(["a", "b", "c"]);
+  });
+
+  it("handles empty and single-card pools in both orders", () => {
+    for (const order of ["listed", "random"] as const) {
+      expect(createDrillQueue([], order)).toEqual([]);
+      expect(createDrillQueue(["only"], order, "only")).toEqual(["only"]);
+    }
   });
 });

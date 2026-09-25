@@ -6,6 +6,7 @@ import { assertValidCardsDocument } from "./lib/data.mjs";
 import { loadLocalEnv } from "./lib/env.mjs";
 import { assertValidLibraryDocument, parseGlossaryMarkdown } from "./lib/library.mjs";
 import { parseMasterMarkdown } from "./lib/markdown.mjs";
+import { remapEssentialGlossary } from "./lib/essentials.mjs";
 
 async function readRequiredInput(environment, name) {
   const configuredPath = environment[name]?.trim();
@@ -32,7 +33,7 @@ export async function syncLibrary(environment = process.env, options = {}) {
   let cards;
   try { cards = parseMasterMarkdown(masterMarkdown); }
   catch { throw new Error("Could not parse the TOEIC master table. Check required columns, values, dates, and unique IDs."); }
-  const terms = parseGlossaryMarkdown(glossaryMarkdown);
+  const terms = remapEssentialGlossary(parseGlossaryMarkdown(glossaryMarkdown), legacyDocument.cards);
   const document = { schemaVersion: 1, generatedAt: now().toISOString(), cards, terms };
   assertValidLibraryDocument(document, legacyDocument.cards);
 

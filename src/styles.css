@@ -1061,7 +1061,8 @@ input[type="search"] {
     padding: 0.75rem;
   }
 
-  .drill-filters > label:first-child {
+  .drill-filters > label:first-child,
+  .drill-filters > .drill-source-filter {
     grid-column: 1 / -1;
   }
 
